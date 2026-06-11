@@ -1,0 +1,596 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Real Analysis Theorem Flashcards</title>
+<style>
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; background: #f7f7f7; }
+body { margin: 0; padding: 24px; }
+h1 { margin-bottom: 4px; }
+.sub { color:#555; margin-top:0; }
+.controls { position: sticky; top: 0; background: #f7f7f7; padding: 12px 0; z-index: 10; }
+button { padding: 8px 12px; border: 1px solid #bbb; border-radius: 8px; background: white; cursor: pointer; margin-right:8px; }
+.topic { margin-top: 28px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 16px; }
+.card { perspective: 1000px; min-height: 300px; }
+.inner { position: relative; width: 100%; min-height: 300px; transition: transform 0.5s; transform-style: preserve-3d; cursor: pointer; }
+.card.flipped .inner { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; border-radius: 14px; box-shadow: 0 3px 10px rgba(0,0,0,.12); padding: 16px; backface-visibility: hidden; overflow: auto; background: white; }
+.back { transform: rotateY(180deg); background: #fffef8; }
+.label { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: #777; }
+.title { font-weight: 700; margin: 4px 0 10px; }
+pre { white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9rem; }
+.source { color:#666; font-size:.8rem; margin-top:10px; }
+</style>
+</head><body>
+<h1>Real Analysis Theorem Flip Cards</h1>
+<p class='sub'>Total cards: 86. Click a card to flip it.</p>
+<div class='controls'><button onclick='flipAll(false)'>Show all fronts</button><button onclick='flipAll(true)'>Show all backs</button></div>
+<section class='topic'><h2>4. Functional limits</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.3 — Limit point</div><pre>Definition 4.3 — Limit point.
+Let ___ ⊆ ℝ and ___ ∈ ℝ.
+___ is a limit point of ___ iff:
+(∀ ___ &gt; 0)(∃ ___ ∈ ___) 0 &lt; |___ − ___| &lt; ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.3 — Limit point</div><pre>Let E ⊆ ℝ and a ∈ ℝ.
+a is a limit point of E iff for every δ &gt; 0 there exists x ∈ E such that 0 &lt; |x − a| &lt; δ.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.6 — Sequential criterion for limit points</div><pre>Theorem 4.6 — Sequential criterion for limit points.
+Let ___ ⊆ ℝ and ___ ∈ ℝ.
+___ is a limit point of ___ ⇔ (∃ sequence (___)) such that ___ → ___ and (∀ ___ ∈ ℕ) ___ ∈ ___ and ___ ≠ ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.6 — Sequential criterion for limit points</div><pre>Let E ⊆ ℝ and a ∈ ℝ.
+a is a limit point of E iff there exists a sequence (x_n) such that x_n → a, and for every n ∈ ℕ, x_n ∈ E and x_n ≠ a.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.7 — Function limit</div><pre>Definition 4.7 — Function limit.
+Let ___ ⊆ ℝ, ___ be a limit point of ___, ___: ___ → ℝ, and ___ ∈ ℝ.
+lim_{x→___} ___(x) = ___ iff:
+(∀ ___ &gt; 0)(∃ ___ &gt; 0) [___ ∈ ___ and 0 &lt; |___ − ___| &lt; ___ ⇒ |___(___) − ___| &lt; ___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.7 — Function limit</div><pre>Let E ⊆ ℝ, let a be a limit point of E, let f: E → ℝ, and let L ∈ ℝ.
+lim_{x→a} f(x) = L iff for every ε &gt; 0 there exists δ &gt; 0 such that if x ∈ E and 0 &lt; |x − a| &lt; δ, then |f(x) − L| &lt; ε.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.10 — Sequential criterion for function limits</div><pre>Theorem 4.10 — Sequential criterion for function limits.
+Let ___ ⊆ ℝ, ___ be a limit point of ___, ___: ___ → ℝ, ___ ∈ ℝ.
+lim_{x→___} ___(x) = ___ ⇔
+(∀ sequences (___)) [___ ∈ ___\{___} for all ___ and ___ → ___ ⇒ ___(___) → ___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.10 — Sequential criterion for function limits</div><pre>Let E ⊆ ℝ, a ∈ ℝ be a limit point of E, f: E → ℝ, and L ∈ ℝ.
+lim_{x→a} f(x) = L iff for every sequence (a_n) with a_n ∈ E\{a} for all n and a_n → a, we have f(a_n) → L.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.11 — Algebra of Limits</div><pre>Theorem 4.11 — Algebra of Limits.
+Assume lim ___ = ___ and lim ___ = ___. Then:
+(a) lim (___ + ___) = ___ + ___
+(b) lim (___ · ___) = ___ · ___
+(c) lim ___/___ = ___/___ if ___ ≠ 0.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.11 — Algebra of Limits</div><pre>Let E ⊆ ℝ, a be a limit point of E, and f,g: E → ℝ. If lim_{x→a} f(x)=α and lim_{x→a} g(x)=β, then:
+(a) lim_{x→a}(f+g)(x)=α+β;
+(b) lim_{x→a}(fg)(x)=αβ;
+(c) lim_{x→a} f(x)/g(x)=α/β if β ≠ 0.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.12 — Inequalities and Limits</div><pre>Theorem 4.12 — Inequalities and Limits.
+Let lim ___ = ___ and lim ___ = ___.
+If (∀ ___ ∈ ___) ___(___) ≤ ___(___), then ___ ≤ ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.12 — Inequalities and Limits</div><pre>Let E ⊆ ℝ, a be a limit point of E, and f,g: E → ℝ with lim_{x→a} f(x)=α and lim_{x→a} g(x)=β.
+If f(x) ≤ g(x) for all x ∈ E, then α ≤ β.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 4.13 — Bounds pass to limits</div><pre>Corollary 4.13 — Bounds pass to limits.
+If ___ ≤ ___(x) for all x, then ___ ≤ lim ___.
+If ___(x) ≤ ___ for all x, then lim ___ ≤ ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 4.13 — Bounds pass to limits</div><pre>If b ∈ ℝ satisfies b ≤ f(x) for all x ∈ E, then b ≤ α, where α = lim_{x→a} f(x).
+If c ∈ ℝ satisfies f(x) ≤ c for all x ∈ E, then α ≤ c.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.15 — Infinite limit</div><pre>Definition 4.15 — Infinite limit.
+lim_{x→___} ___(x) = ∞ iff:
+(∀ ___ ∈ ℝ)(∃ ___ &gt; 0) [___ ∈ ___ and 0 &lt; |___ − ___| &lt; ___ ⇒ ___(___) &gt; ___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.15 — Infinite limit</div><pre>Let E ⊆ ℝ, a be a limit point of E, and f: E → ℝ.
+lim_{x→a} f(x)=∞ iff for every r ∈ ℝ there exists δ &gt; 0 such that if x ∈ E and 0 &lt; |x−a| &lt; δ, then f(x) &gt; r.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.17 — Limit at infinity</div><pre>Definition 4.17 — Limit at infinity.
+lim_{x→∞} ___(x) = ___ iff:
+(∀ ___ &gt; 0)(∃ ___ ∈ ℝ) [___ ∈ ___ and ___ &gt; ___ ⇒ |___(___) − ___| &lt; ___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.17 — Limit at infinity</div><pre>Let E ⊆ ℝ be not bounded above, f: E → ℝ, and L ∈ ℝ.
+lim_{x→∞} f(x)=L iff for every ε &gt; 0 there exists M ∈ ℝ such that if x ∈ E and x &gt; M, then |f(x)−L| &lt; ε.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>4. Continuity</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.19 — Continuity at a point</div><pre>Definition 4.19 — Continuity at a point.
+Let ___ ⊆ ℝ, ___: ___ → ℝ, ___ ∈ ___.
+___ is continuous at ___ iff:
+(∀ ___ &gt; 0)(∃ ___ &gt; 0) [___ ∈ ___ and |___ − ___| &lt; ___ ⇒ |___(___) − ___(___)| &lt; ___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.19 — Continuity at a point</div><pre>Let E ⊆ ℝ, f: E → ℝ, and a ∈ E.
+f is continuous at a iff for every ε &gt; 0 there exists δ &gt; 0 such that if x ∈ E and |x−a| &lt; δ, then |f(x)−f(a)| &lt; ε.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Negation — Not continuous at a point</div><pre>Negation — Not continuous at a point.
+¬ continuous at ___ means:
+(∃ ___ &gt; 0)(∀ ___ &gt; 0)(∃ ___ ∈ ___) [|___ − ___| &lt; ___ and |___(___) − ___(___)| ___ ___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Negation — Not continuous at a point</div><pre>f is not continuous at a iff there exists ε &gt; 0 such that for every δ &gt; 0 there exists x ∈ E with |x−a| &lt; δ and |f(x)−f(a)| ≥ ε.
+Your notes use &gt; ε in the example; the logically standard negation of &lt; ε is ≥ ε.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.23 — Limit criterion for continuity</div><pre>Theorem 4.23 — Limit criterion for continuity.
+Let ___ ⊆ ℝ, ___: ___ → ℝ, ___ ∈ ___ be a limit point of ___.
+___ continuous at ___ ⇔ lim_{x→___} ___(x) = ___(___).</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.23 — Limit criterion for continuity</div><pre>Let E ⊆ ℝ, f: E → ℝ, and a ∈ E be a limit point of E.
+f is continuous at a iff lim_{x→a} f(x) = f(a).</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.24 — Algebra of Continuity</div><pre>Theorem 4.24 — Algebra of Continuity.
+If ___ and ___ are continuous at ___, then:
+(a) ___ + ___ continuous at ___
+(b) ___·___ continuous at ___
+(c) ___/___ continuous at ___ if ___(___) ≠ 0.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.24 — Algebra of Continuity</div><pre>Let E ⊆ ℝ, f,g: E → ℝ, and a ∈ E. If f and g are continuous at a, then f+g and fg are continuous at a, and f/g is continuous at a if g(a) ≠ 0.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 4.25 — Polynomial continuity</div><pre>Corollary 4.25 — Polynomial continuity.
+All ___ functions ℝ → ℝ are ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 4.25 — Polynomial continuity</div><pre>All polynomial functions ℝ → ℝ are continuous.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.26 — Sequential criterion for continuity</div><pre>Theorem 4.26 — Sequential criterion for continuity.
+Let ___ ⊆ ℝ, ___: ___ → ℝ, ___ ∈ ___.
+___ continuous at ___ ⇔
+(∀ sequences (___) in ___) [___ → ___ ⇒ ___(___) → ___(___)].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.26 — Sequential criterion for continuity</div><pre>Let E ⊆ ℝ, f: E → ℝ, and a ∈ E.
+f is continuous at a iff for every sequence (a_n) in E with a_n → a, we have f(a_n) → f(a).</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.27 — Composition and Continuity</div><pre>Theorem 4.27 — Composition and Continuity.
+Let ___: ___ → ℝ and ___: ___ → ℝ with ___(___) ⊆ ___.
+If ___ continuous at ___ and ___ continuous at ___(___), then ___∘___ continuous at ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.27 — Composition and Continuity</div><pre>Let A,B ⊆ ℝ, f: A → ℝ and g: B → ℝ with f(A) ⊆ B. Let a ∈ A.
+If f is continuous at a and g is continuous at f(a), then g∘f is continuous at a.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.28 — Bounded function</div><pre>Definition 4.28 — Bounded function.
+___ is bounded above/below/bounded iff the set ___(___) is bounded above/below/bounded in ℝ.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.28 — Bounded function</div><pre>Let E ⊆ ℝ and f: E → ℝ.
+f is bounded above/below/bounded iff the image set f(E) is bounded above/below/bounded in ℝ.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Lemma 4.30 — Local boundedness of continuous functions</div><pre>Lemma 4.30 — Local boundedness.
+If ___: [___,___] → ℝ is continuous, then for every ___ ∈ (___,___), (∃ ___ &gt; 0) such that ___ is bounded on [___−___, ___+___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Lemma 4.30 — Local boundedness of continuous functions</div><pre>Let f: [a,b] → ℝ be continuous. For every c ∈ (a,b), there exists δ &gt; 0 such that f is bounded on [c−δ, c+δ].</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.31 — Continuous on closed interval implies bounded</div><pre>Theorem 4.31 — Boundedness theorem.
+If ___: [___,___] → ℝ is continuous, then ___ is ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.31 — Continuous on closed interval implies bounded</div><pre>Let f: [a,b] → ℝ. If f is continuous, then f is bounded.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.32 — Extreme Value Theorem</div><pre>Theorem 4.32 — Extreme Value Theorem.
+If ___: [___,___] → ℝ is continuous, then (∃ ___, ___ ∈ [___,___]) such that
+___(___) ≤ ___(___) ≤ ___(___) for all ___ ∈ [___,___].</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.32 — Extreme Value Theorem</div><pre>Let f: [a,b] → ℝ be continuous. There exist c,d ∈ [a,b] such that f(c) ≤ f(x) ≤ f(d) for all x ∈ [a,b].</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Lemma 4.33 — Zero crossing lemma</div><pre>Lemma 4.33 — Zero crossing.
+Let ___: [___,___] → ℝ be continuous.
+If ___(___) &lt; 0 &lt; ___(___), then (∃ ___ ∈ (___,___)) ___(___) = 0.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Lemma 4.33 — Zero crossing lemma</div><pre>Let h: [a,b] → ℝ be continuous. If h(a) &lt; 0 &lt; h(b), then there exists c ∈ (a,b) such that h(c)=0.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.34 — Intermediate Value Theorem</div><pre>Theorem 4.34 — Intermediate Value Theorem.
+Let ___: [___,___] → ℝ be continuous.
+If ___ is strictly between ___(___) and ___(___), then (∃ ___ ∈ (___,___)) ___(___) = ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.34 — Intermediate Value Theorem</div><pre>Let f: [a,b] → ℝ be continuous. If y ∈ ℝ is strictly between f(a) and f(b), then there exists c ∈ (a,b) such that f(c)=y.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>4. Sequences of functions</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.38 — Pointwise convergence</div><pre>Definition 4.38 — Pointwise convergence.
+(___) converges pointwise to ___ iff:
+(∀ ___ ∈ ___)(∀ ___ &gt; 0)(∃ ___ ∈ ℕ) [___ &gt; ___ ⇒ |___(___) − ___(___)| &lt; ___].
+Hint: ___ may depend on ___ and ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.38 — Pointwise convergence</div><pre>Let E ⊆ ℝ, f_n: E → ℝ, and f: E → ℝ.
+f_n → f pointwise iff for every x ∈ E, f_n(x) → f(x). Equivalently: (∀x∈E)(∀ε&gt;0)(∃M∈ℕ) n&gt;M ⇒ |f_n(x)−f(x)|&lt;ε. M may depend on x and ε.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 4.40 — Uniform convergence</div><pre>Definition 4.40 — Uniform convergence.
+(___) converges uniformly to ___ iff:
+(∀ ___ &gt; 0)(∃ ___ ∈ ℕ)(∀ ___ ∈ ___) [___ &gt; ___ ⇒ |___(___) − ___(___)| &lt; ___].
+Hint: same ___ works for all ___ ∈ ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 4.40 — Uniform convergence</div><pre>Let E ⊆ ℝ, f_n: E → ℝ, and f: E → ℝ.
+f_n → f uniformly iff (∀ε&gt;0)(∃M∈ℕ)(∀x∈E) n&gt;M ⇒ |f_n(x)−f(x)|&lt;ε. Here M depends only on ε, not on x.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 4.42 — Uniform Limit Continuity Theorem</div><pre>Theorem 4.42 — Uniform Limit Continuity Theorem.
+Let (___) be continuous functions ___: ___ → ℝ.
+If ___ → ___ uniformly on ___, then ___ is ___.</pre><div class='source'>limits-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 4.42 — Uniform Limit Continuity Theorem</div><pre>Let E ⊆ ℝ and let (f_n) be a sequence of continuous functions f_n: E → ℝ. If f_n converges uniformly to f: E → ℝ, then f is continuous.</pre><div class='source'>limits-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>5. Differentiation</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.1 — Derivative</div><pre>Definition 5.1 — Derivative.
+Let ___ ⊆ ℝ be an interval, ___: ___ → ℝ, ___ ∈ ___.
+___ differentiable at ___ iff (∃ ___ ∈ ℝ) such that
+lim_{x→___} [___(___) − ___(___)]/[___ − ___] = ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.1 — Derivative</div><pre>Let I ⊆ ℝ be an interval, f: I → ℝ, and c ∈ I.
+f is differentiable at c iff there exists L_c ∈ ℝ such that lim_{x→c} (f(x)−f(c))/(x−c) = L_c. The derivative is f′(c)=L_c.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.4 — Differentiability implies continuity</div><pre>Theorem 5.4 — Differentiability ⇒ Continuity.
+Let ___ ⊆ ℝ, ___: ___ → ℝ, ___ ∈ ___.
+If ___ is differentiable at ___, then ___ is continuous at ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.4 — Differentiability implies continuity</div><pre>Let I ⊆ ℝ be an interval, f: I → ℝ, and c ∈ I. If f is differentiable at c, then f is continuous at c.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.5 — Linearity of derivative</div><pre>Theorem 5.5 — Linearity.
+If ___ and ___ are differentiable at ___, then:
+(___+___)′(___) = ___′(___) + ___′(___)
+and (___·___)′(___) = ___ ___′(___) for scalar ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.5 — Linearity of derivative</div><pre>Let I ⊆ ℝ, c ∈ I, and f,g: I → ℝ be differentiable at c. Then f+g is differentiable at c with (f+g)′(c)=f′(c)+g′(c), and for λ ∈ ℝ, λf is differentiable at c with (λf)′(c)=λf′(c).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.6 — Product Rule</div><pre>Theorem 5.6 — Product Rule.
+If ___ and ___ are differentiable at ___, then ___·___ is differentiable at ___ and
+(___·___)′(___) = ___′(___)___(___) + ___(___)___′(___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.6 — Product Rule</div><pre>Let I ⊆ ℝ, c ∈ I, and f,g: I → ℝ be differentiable at c. Then fg is differentiable at c and (fg)′(c)=f′(c)g(c)+f(c)g′(c).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Power rule — integer powers</div><pre>Power rule.
+For ___ ∈ ℤ with ___ &gt; 1, ___(x)=x^___ is differentiable on ℝ and ___′(x)= ___ x^{___−1}.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Power rule — integer powers</div><pre>For each n ∈ ℤ with n &gt; 1, f(x)=x^n is differentiable on ℝ with derivative f′(x)=n x^{n−1}.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.8 — Local maximum/minimum</div><pre>Definition 5.8 — Local extrema.
+Local maximum at ___ means (∃ ___ &gt; 0)(∀ ___) |___−___| &lt; ___ ⇒ ___(___) ≤ ___(___).
+Local minimum at ___ means (∃ ___ &gt; 0)(∀ ___) |___−___| &lt; ___ ⇒ ___(___) ≥ ___(___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.8 — Local maximum/minimum</div><pre>Let f: [a,b] → ℝ and c ∈ (a,b).
+f has a local maximum at c iff there exists δ&gt;0 such that for all x∈[a,b], |x−c|&lt;δ ⇒ f(x)≤f(c).
+f has a local minimum at c iff there exists δ&gt;0 such that for all x∈[a,b], |x−c|&lt;δ ⇒ f(x)≥f(c).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.9 — Fermat’s theorem for local extrema</div><pre>Theorem 5.9 — Local extremum ⇒ derivative zero.
+Let ___: [___,___] → ℝ be continuous and differentiable at ___ ∈ (___,___).
+If ___ has a local maximum or minimum at ___, then ___′(___) = ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.9 — Fermat’s theorem for local extrema</div><pre>Let f: [a,b] → ℝ be continuous, and suppose f is differentiable at c ∈ (a,b). If f has a local maximum or local minimum at c, then f′(c)=0.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.10 — Mean Value Theorem</div><pre>Theorem 5.10 — Mean Value Theorem.
+Let ___ &lt; ___. If ___ is continuous on [___,___] and differentiable on (___,___), then
+(∃ ___ ∈ (___,___)) ___′(___) = [___(___)−___(___)]/[___−___].</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.10 — Mean Value Theorem</div><pre>Let a &lt; b and f: [a,b] → ℝ be continuous on [a,b] and differentiable on (a,b). There exists c ∈ (a,b) such that f′(c) = (f(b)−f(a))/(b−a).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.12 — Rolle’s Theorem</div><pre>Theorem 5.12 — Rolle.
+Let ___ &lt; ___. If ___ is continuous on [___,___], differentiable on (___,___), and ___(___) = ___(___) = 0, then
+(∃ ___ ∈ (___,___)) ___′(___) = 0.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.12 — Rolle’s Theorem</div><pre>Let a &lt; b and f: [a,b] → ℝ be continuous on [a,b] and differentiable on (a,b). If f(a)=f(b)=0, then there exists c ∈ (a,b) such that f′(c)=0.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>5. Integration</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.13 — Partition</div><pre>Definition 5.13 — Partition.
+A partition of [___,___] is ___ = {___, …, ___} with ___ = ___ ≤ ___ ≤ ⋯ ≤ ___ = ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.13 — Partition</div><pre>A partition of [a,b] is a set P={x_0,x_1,…,x_n} where a=x_0 ≤ x_1 ≤ … ≤ x_n=b. The intervals [x_{i−1},x_i] are subintervals.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.15 — Lower and upper Riemann sums</div><pre>Definition 5.15 — Lower/upper sums.
+For bounded ___ on [___,___] and partition ___:
+L(___,___)=Σ ___(x_k−x_{k−1}), where ___ = inf{___(___): ___ in subinterval}.
+U(___,___)=Σ ___(x_k−x_{k−1}), where ___ = sup{___(___): ___ in subinterval}.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.15 — Lower and upper Riemann sums</div><pre>Let f: [a,b] → ℝ be bounded and P={x_0,…,x_n}.
+L(f,P)=Σ_{k=1}^n m_k(x_k−x_{k−1}), where m_k=inf{f(x): x∈[x_{k−1},x_k]}.
+U(f,P)=Σ_{k=1}^n M_k(x_k−x_{k−1}), where M_k=sup{f(x): x∈[x_{k−1},x_k]}.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Lemma 5.17 — Lower sum ≤ upper sum</div><pre>Lemma 5.17 — Same partition inequality.
+For bounded ___ and every partition ___ of [___,___],
+L(___,___) ≤ U(___,___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Lemma 5.17 — Lower sum ≤ upper sum</div><pre>Let f: [a,b] → ℝ be bounded. For every partition P of [a,b], L(f,P) ≤ U(f,P).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.18 — Refinement</div><pre>Definition 5.18 — Refinement.
+If ___ and ___ are partitions of [___,___], then ___ is a refinement of ___ iff ___ ⊆ ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.18 — Refinement</div><pre>If P and Q are partitions of [a,b], Q is a refinement of P iff P ⊆ Q.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Lemma 5.20 — One-point refinement improves sums</div><pre>Lemma 5.20 — One-point refinement.
+If ___ refines ___ by one point, then
+L(___,___) ≤ L(___,___) and U(___,___) ≤ U(___,___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Lemma 5.20 — One-point refinement improves sums</div><pre>Let f be bounded on [a,b], R a partition, and Q a refinement of R with Q\R having one element. Then L(f,R) ≤ L(f,Q) and U(f,Q) ≤ U(f,R).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Lemma 5.21 — Refinement improves sums</div><pre>Lemma 5.21 — Refinement.
+If ___ refines ___, then
+L(___,___) ≤ L(___,___) and U(___,___) ≤ U(___,___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Lemma 5.21 — Refinement improves sums</div><pre>Let f be bounded on [a,b], P a partition, and Q a refinement of P. Then L(f,P) ≤ L(f,Q) and U(f,Q) ≤ U(f,P).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.22 — Any lower sum ≤ any upper sum</div><pre>Theorem 5.22 — Lower sums sit below upper sums.
+For bounded ___ and any partitions ___, ___′ of [___,___],
+L(___,___) ≤ U(___,___′).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.22 — Any lower sum ≤ any upper sum</div><pre>Let f: [a,b] → ℝ be bounded and P,P′ partitions of [a,b]. Then L(f,P) ≤ U(f,P′).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.23 — Lower/upper Riemann integrals</div><pre>Definition 5.23 — Lower/upper integrals.
+L(___) = sup{L(___,___): ___ partition}
+U(___) = inf{U(___,___): ___ partition}.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.23 — Lower/upper Riemann integrals</div><pre>For bounded f: [a,b] → ℝ, the lower Riemann integral is L(f)=sup{L(f,P): P is a partition of [a,b]}, and the upper Riemann integral is U(f)=inf{U(f,P): P is a partition of [a,b]}.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.24 — Lower integral ≤ upper integral</div><pre>Theorem 5.24 — Integral inequality.
+For bounded ___: [___,___] → ℝ,
+L(___) ≤ U(___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.24 — Lower integral ≤ upper integral</div><pre>Let f: [a,b] → ℝ be bounded. Then L(f) ≤ U(f).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 5.26 — Riemann integrable</div><pre>Definition 5.26 — Riemann integrable.
+___ is Riemann integrable on [___,___] iff L(___) = U(___).
+Then ∫ ___ = ___ = ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 5.26 — Riemann integrable</div><pre>A bounded function f: [a,b] → ℝ is Riemann integrable on [a,b] iff L(f)=U(f). In that case ∫_a^b f(x)dx = L(f)=U(f).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.27 — Riemann integrability criterion</div><pre>Theorem 5.27 — Integrability criterion.
+Bounded ___ is Riemann integrable on [___,___] ⇔
+(∀ ___ &gt; 0)(∃ partition ___ε) U(___,___ε) − L(___,___ε) &lt; ___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.27 — Riemann integrability criterion</div><pre>Let f: [a,b] → ℝ be bounded. f is Riemann integrable on [a,b] iff for every ε &gt; 0 there exists a partition P_ε of [a,b] such that U(f,P_ε) − L(f,P_ε) &lt; ε.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.28 — Continuous functions are integrable</div><pre>Theorem 5.28 — Continuity ⇒ Integrability.
+If ___: [___,___] → ℝ is continuous on [___,___], then ___ is integrable on [___,___].</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.28 — Continuous functions are integrable</div><pre>Let f: [a,b] → ℝ. If f is continuous on [a,b], then f is integrable on [a,b].</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.29 — Properties of integrals</div><pre>Theorem 5.29 — Algebra/order of integrals.
+If ___, ___ integrable and ___ ∈ ℝ, then:
+∫_a^b ___ = ∫_a^c ___ + ∫_c^b ___;
+∫(___+___)=∫___+∫___;
+∫ ___·___ = ___∫___;
+|∫___| ≤ ∫|___|;
+___ ≤ ___ ⇒ ∫___ ≤ ∫___.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.29 — Properties of integrals</div><pre>Let f,g: [a,b] → ℝ be integrable and λ∈ℝ. Then:
+(a) ∫_a^b f = ∫_a^c f + ∫_c^b f for all c∈[a,b];
+(b) ∫_a^b(f+g)=∫_a^b f + ∫_a^b g;
+(c) ∫_a^b λf = λ∫_a^b f;
+(d) |∫_a^b f| ≤ ∫_a^b |f|;
+(e) if f≤g on [a,b], then ∫_a^b f ≤ ∫_a^b g.</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.30 — Fundamental Theorem of Calculus I</div><pre>Theorem 5.30 — FTC I.
+Let ___: [___,___] → ℝ be integrable. Let ___: [___,___] → ℝ be differentiable with ___′(___) = ___(___) for all ___.
+Then ∫_a^b ___(___) d___ = ___(___) − ___(___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.30 — Fundamental Theorem of Calculus I</div><pre>Let f: [a,b] → ℝ be integrable. Let F: [a,b] → ℝ be differentiable with F′(x)=f(x) for all x∈[a,b]. Then ∫_a^b f(x)dx = F(b) − F(a).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 5.31 — Fundamental Theorem of Calculus II</div><pre>Theorem 5.31 — FTC II.
+Let ___: [___,___] → ℝ be integrable and define ___(___) = ∫_a^x ___(___) d___.
+Then ___ is continuous. If ___ is continuous at ___, then ___ is differentiable at ___ and ___′(___) = ___(___).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 5.31 — Fundamental Theorem of Calculus II</div><pre>Let g: [a,b] → ℝ be integrable and define G(x)=∫_a^x g(t)dt. Then G is continuous on [a,b]. If g is continuous at c∈[a,b], then G is differentiable at c and G′(c)=g(c).</pre><div class='source'>deriv_int-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>6. Series of numbers</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.1 — Series and partial sums</div><pre>Definition 6.1 — Series.
+Given sequence (___), define partial sums ___n = Σ_{k=0}^n ___.
+The expression Σ_{k=0}^∞ ___ is called a ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.1 — Series and partial sums</div><pre>Let (a_n) be a sequence. Define A_n=Σ_{k=0}^n a_k. The expression Σ_{k=0}^∞ a_k is the series with partial sums A_n.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.3/6.4 — Series convergence/divergence</div><pre>Definition 6.3/6.4 — Convergence/divergence.
+Σ ___ converges to ___ iff lim ___n = ___.
+Σ ___ diverges iff the partial sums ___n ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.3/6.4 — Series convergence/divergence</div><pre>The series Σ_{k=0}^∞ a_k converges to L iff lim_{n→∞} A_n=L, where A_n are partial sums. It diverges if the partial sums diverge; it diverges to ±∞ if A_n → ±∞.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.6 — Terms of a convergent series go to zero</div><pre>Theorem 6.6 — Necessary term test.
+If Σ ___ converges, then ___ → ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.6 — Terms of a convergent series go to zero</div><pre>If the series Σ_{k=0}^∞ a_k converges, then a_k → 0.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 6.7 — Divergence test</div><pre>Corollary 6.7 — Divergence criterion.
+If (___) does not converge to ___, then Σ ___ ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 6.7 — Divergence test</div><pre>If the sequence (a_n) does not converge to 0, then the series Σ_{n=0}^∞ a_n diverges.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.9 — Alternating series</div><pre>Definition 6.9 — Alternating series.
+An alternating series has form Σ ___^n ___n = ___0 − ___1 + ___2 − …, with ___n ≥ 0.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.9 — Alternating series</div><pre>An alternating series is a series of the form Σ_{n=0}^∞ (−1)^n b_n = b_0 − b_1 + b_2 − …, where b_n ≥ 0 for all n.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.10 — Alternating Series Test</div><pre>Theorem 6.10 — Alternating Series Test.
+Let (___n) be monotone decreasing.
+Σ (−1)^n ___n converges ⇔ ___n → ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.10 — Alternating Series Test</div><pre>Let (b_n) be monotone decreasing with b_n ≥ 0. The alternating series Σ_{n=0}^∞ (−1)^n b_n converges iff b_n → 0.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.12 — Geometric series</div><pre>Definition 6.12 — Geometric series.
+Given ___ ∈ ℝ, the geometric series with ratio ___ is Σ ___^k = 1 + ___ + ___^2 + …</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.12 — Geometric series</div><pre>Given r ∈ ℝ, the geometric series with ratio r is Σ_{k=0}^∞ r^k = 1+r+r^2+…</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.13 — Geometric Series Test</div><pre>Theorem 6.13 — Geometric Series Test.
+Σ ___^k converges ⇔ |___| &lt; ___.
+When it converges, Σ ___^k = 1/(1−___).</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.13 — Geometric Series Test</div><pre>The geometric series Σ_{k=0}^∞ r^k converges iff |r|&lt;1. When it converges, its sum is 1/(1−r).</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.14 — Algebra of Series</div><pre>Theorem 6.14 — Algebra of Series.
+If Σ ___ = ___ and Σ ___ = ___, then
+Σ(___+___)=___+___ and Σ ___·___ = ___·___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.14 — Algebra of Series</div><pre>If Σ a_n=α and Σ b_n=β, and λ∈ℝ, then Σ(a_n+b_n)=α+β and Σλa_n=λα.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.15 — Absolute convergence</div><pre>Definition 6.15 — Absolute convergence.
+Σ ___ converges absolutely iff Σ |___| ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.15 — Absolute convergence</div><pre>A series Σ a_k converges absolutely iff the series Σ |a_k| converges.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.16 — Absolute convergence implies convergence</div><pre>Theorem 6.16 — Absolute convergence.
+If Σ ___ converges absolutely, then Σ ___ ___.
+Also, all rearrangements converge to the same ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.16 — Absolute convergence implies convergence</div><pre>If a series converges absolutely, then it converges. Moreover, all rearrangements of an absolutely convergent series converge to the same value.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.17 — Positive series criterion</div><pre>Theorem 6.17 — Positive series.
+If ___k ≥ 0 for all k, then Σ ___k converges ⇔ the partial sums ___n are bounded ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.17 — Positive series criterion</div><pre>Let (a_k) satisfy a_k ≥ 0 for all k. The series Σ_{k=0}^∞ a_k converges iff the sequence of partial sums (A_n) is bounded above.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.18 — Integral Test</div><pre>Theorem 6.18 — Integral Test.
+Let ___: [1,∞) → ℝ be positive, decreasing, and integrable on [1,___] for all ___ &gt; 1.
+Σ_{k=1}^∞ ___(k) converges ⇔ ∫_1^∞ ___(u) du converges.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.18 — Integral Test</div><pre>Let f: [1,∞) → ℝ be positive, decreasing, and integrable on [1,b] for all b&gt;1. Then Σ_{k=1}^∞ f(k) converges iff the improper integral ∫_1^∞ f(u)du converges.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 6.19 — p-series Test</div><pre>Corollary 6.19 — p-series Test.
+For ___ ≥ 0, Σ 1/k^___ converges for ___ &gt; ___ and diverges for 0 ≤ ___ ≤ ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 6.19 — p-series Test</div><pre>Let p ∈ ℝ with p ≥ 0. The p-series Σ_{k=1}^∞ 1/k^p converges for p&gt;1 and diverges for 0≤p≤1.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.21 — Limit Ratio Test</div><pre>Theorem 6.21 — Limit Ratio Test.
+If lim |___{k+1}/___k| = ___ ≥ 0, then:
+___ &lt; 1 ⇒ Σ ___k converges absolutely;
+___ &gt; 1 ⇒ Σ ___k diverges;
+___ = 1 ⇒ test says ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.21 — Limit Ratio Test</div><pre>Let (a_k) be a sequence with a_k≠0 eventually and lim_{k→∞}|a_{k+1}/a_k|=r≥0. If r&lt;1, then Σ a_k converges absolutely. If r&gt;1, then Σ a_k diverges. If r=1, the test is inconclusive.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.24 — Conditional convergence</div><pre>Definition 6.24 — Conditional convergence.
+Σ ___ is conditionally convergent iff it is ___ but not ___ convergent.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.24 — Conditional convergence</div><pre>A series is conditionally convergent iff it is convergent but not absolutely convergent.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.25 — Rearrangement of conditionally convergent series</div><pre>Theorem 6.25 — Rearrangement theorem.
+If Σ ___ is conditionally convergent, then for every ___ ∈ ℝ ∪ {−∞,∞}, there exists a bijection ___: ℕ → ℕ such that Σ ___{___(n)} = ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.25 — Rearrangement of conditionally convergent series</div><pre>If a series Σ a_n is conditionally convergent, then for every L ∈ ℝ ∪ {−∞,∞}, there exists a rearrangement of the series that converges to L; i.e. a bijection φ: ℕ→ℕ with Σ a_{φ(n)}=L.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>6. Function series</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.26 — Cauchy uniform convergence criterion for sequences</div><pre>Theorem 6.26 — Uniform Cauchy criterion.
+(___n) converges uniformly on ___ ⇔
+(∀ ___ &gt; 0)(∃ ___ ∈ ℕ)(∀ ___,___ &gt; ___)(∀ ___ ∈ ___) |___m(___) − ___n(___)| &lt; ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.26 — Cauchy uniform convergence criterion for sequences</div><pre>Let E ⊆ ℝ and f_n: E → ℝ. The sequence (f_n) converges uniformly on E iff for every ε&gt;0 there exists M∈ℕ such that for all m,n&gt;M, |f_m(x)−f_n(x)|&lt;ε for all x∈E.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 6.27 — Cauchy uniform criterion for series</div><pre>Corollary 6.27 — Uniform Cauchy criterion for series.
+Σ ___k converges uniformly on ___ ⇔
+(∀ ___ &gt; 0)(∃ ___)(∀ ___,___ with ___ &gt; ___ &gt; ___)(∀ ___ ∈ ___) |___{m+1}(___) + ⋯ + ___n(___)| &lt; ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 6.27 — Cauchy uniform criterion for series</div><pre>Let E ⊆ ℝ and f_k: E → ℝ. The series Σ f_k converges uniformly on E iff for every ε&gt;0 there exists M∈ℕ such that for all n&gt;m&gt;M, |f_{m+1}(x)+⋯+f_n(x)|&lt;ε for all x∈E.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 6.28 — Weierstrass M-test</div><pre>Corollary 6.28 — Weierstrass M-test.
+If |___k(___)| ≤ ___k for all ___ ∈ ___ and Σ ___k converges, then Σ ___k converges ___ on ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 6.28 — Weierstrass M-test</div><pre>Let (M_k) be positive real numbers with |f_k(x)| ≤ M_k for all x∈E and all k. If Σ M_k converges, then Σ f_k converges uniformly on E.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>6. Function sequences</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.30 — Uniform convergence of derivatives</div><pre>Theorem 6.30 — Passing derivative through limit.
+Let ___n be differentiable on [___,___]. If (___n(___0)) converges for some ___0 and (___n′) converges uniformly to ___, then ___n converges uniformly to differentiable ___ and ___′ = ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.30 — Uniform convergence of derivatives</div><pre>For each n, let f_n: [a,b] → ℝ be differentiable. Suppose there exists x_0∈[a,b] such that f_n(x_0) converges, and f_n′ converges uniformly to g: [a,b]→ℝ. Then f_n converges uniformly to a differentiable function f, and f′=g.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.31 — Uniform limit of integrable functions</div><pre>Theorem 6.31 — Integrals and uniform limits.
+If each ___n is Riemann integrable on [___,___] and ___n → ___ uniformly, then ___ is integrable and
+∫ ___ = lim ∫ ___n.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.31 — Uniform limit of integrable functions</div><pre>For each n, let f_n: [a,b] → ℝ be Riemann integrable. If f_n converges uniformly to f: [a,b]→ℝ, then f is Riemann integrable and ∫_a^b f(x)dx = lim_{n→∞} ∫_a^b f_n(x)dx.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>6. Power series</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.32 — Power series</div><pre>Definition 6.32 — Power series.
+Given (___n) and centre ___, the power series is Σ ___n(___−___)^n.
+Its domain of convergence is the set of ___ where the series ___.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.32 — Power series</div><pre>Let (a_n) be a sequence in ℝ and c∈ℝ. The power series at c is Σ_{n=0}^∞ a_n(x−c)^n. Its domain of convergence is the set of all x∈ℝ for which the series converges.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.33 — Power series converge inside a known point</div><pre>Theorem 6.33 — Power series inside convergence.
+If Σ ___n(x−___)^n converges at ___0, then it converges absolutely at every ___ satisfying |___−___| &lt; |___0−___|.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.33 — Power series converge inside a known point</div><pre>If the power series Σ a_n(x−c)^n converges at x_0, then it converges absolutely at every x satisfying |x−c| &lt; |x_0−c|.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 6.34 — Interval/radius of convergence</div><pre>Corollary 6.34 — Radius of convergence.
+The domain of convergence of a power series at ___ is one of:
+(___−R,___+R), half-closed variants, closed variant, or ℝ.
+___ is called the radius of convergence.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 6.34 — Interval/radius of convergence</div><pre>The domain of convergence of a power series at c is one of (c−R,c+R), (c−R,c+R], [c−R,c+R), [c−R,c+R], or ℝ. The number R is the radius of convergence; for ℝ, set R=∞.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Lemma 6.36 — Uniform convergence inside power series radius</div><pre>Lemma 6.36 — Uniform convergence on closed subinterval.
+If Σ ___n(x−___)^n converges absolutely at ___0, then it converges uniformly on [___−___0, ___+___0] where ___0 = |___0−___|.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Lemma 6.36 — Uniform convergence inside power series radius</div><pre>If the power series Σ a_n(x−c)^n converges absolutely at x_0, then it converges uniformly on the closed interval [c−r_0, c+r_0], where r_0=|x_0−c|.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.37 — Termwise differentiation/integration of power series</div><pre>Theorem 6.37 — Power series calculus.
+If f(x)=Σ ___n(x−___)^n has radius ___ &gt; 0, then on (___−___,___+___):
+(a) f is differentiable and f′(x)=Σ n___n(x−___)^{n−1}.
+(b) ∫ from ___ to x f = Σ ___n(x−___)^{n+1}/(n+1).</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.37 — Termwise differentiation/integration of power series</div><pre>If f(x)=Σ_{n=0}^∞ a_n(x−c)^n has radius of convergence R&gt;0, then f is differentiable on (c−R,c+R) with f′(x)=Σ_{n=1}^∞ n a_n(x−c)^{n−1}. Also, for every x in the interval, ∫_c^x f(t)dt = Σ_{n=0}^∞ a_n(x−c)^{n+1}/(n+1).</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.39 — Algebra of Power Series</div><pre>Theorem 6.39 — Algebra of Power Series.
+If f=Σ ___n(x−___)^n and g=Σ ___n(x−___)^n, then on ___f ∩ ___g:
+f+g = Σ(___n+___n)(x−___)^n, and λf = Σ λ___n(x−___)^n.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.39 — Algebra of Power Series</div><pre>Let f(x)=Σ a_n(x−c)^n and g(x)=Σ b_n(x−c)^n with intervals of convergence E_f and E_g. Then f(x)+g(x)=Σ(a_n+b_n)(x−c)^n for x∈E_f∩E_g, and λf(x)=Σλa_n(x−c)^n for x∈E_f.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.40 — Cauchy product of series</div><pre>Theorem 6.40 — Cauchy product.
+If Σ ___n = ___ and Σ ___n = ___ and at least one converges absolutely, then the Cauchy product Σ ___n converges to ___·___, where ___n = Σ_{k=0}^n ___k ___{n−k}.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.40 — Cauchy product of series</div><pre>If Σ a_n=α and Σ b_n=β and at least one of the two series converges absolutely, then their Cauchy product Σ d_n converges to αβ, where d_n=Σ_{k=0}^n a_k b_{n−k}.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.41 — Product of Power Series</div><pre>Theorem 6.41 — Product of Power Series.
+If f=Σ ___n(x−___)^n and g=Σ ___n(x−___)^n, then on ___f ∩ ___g:
+f(x)g(x)=Σ ___n(x−___)^n, where ___n=Σ_{k=0}^n ___k ___{n−k}.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.41 — Product of Power Series</div><pre>Let f(x)=Σ a_n(x−c)^n and g(x)=Σ b_n(x−c)^n with intervals E_f and E_g. Then f(x)g(x)=Σ d_n(x−c)^n for x∈E_f∩E_g, where d_n=Σ_{k=0}^n a_k b_{n−k}.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>6. Taylor series</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.43 — Taylor polynomial</div><pre>Definition 6.43 — n-th Taylor polynomial.
+T_{n,___}(x)=Σ_{k=0}^n ___^{(k)}(___)/k! · (x−___)^k.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.43 — Taylor polynomial</div><pre>Let c∈(a,b) and f be at least n times differentiable at c. The n-th Taylor polynomial of f at c is T_{n,c}(x)=Σ_{k=0}^n f^{(k)}(c)/k! · (x−c)^k.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.44 — Taylor polynomial derivative matching</div><pre>Theorem 6.44 — Derivative matching.
+For 0 ≤ ___ ≤ ___,
+T_{___,___}^{(___)}(___) = ___^{(___)}(___).</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.44 — Taylor polynomial derivative matching</div><pre>For the Taylor polynomial T_{n,c}, we have T_{n,c}^{(k)}(c)=f^{(k)}(c) for all 0≤k≤n.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.45 — Taylor series</div><pre>Definition 6.45 — Taylor series.
+The Taylor series of ___ at ___ is
+lim_{n→∞} T_{n,___}(x) = Σ_{k=0}^∞ ___^{(k)}(___)/k! · (x−___)^k.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.45 — Taylor series</div><pre>Let c∈(a,b) and f be sufficiently differentiable at c. The Taylor series of f at c is Σ_{k=0}^∞ f^{(k)}(c)/k! · (x−c)^k, the formal limit of T_{n,c}(x).</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.47 — Taylor’s Theorem with remainder</div><pre>Theorem 6.47 — Taylor’s Theorem.
+If ___ is (n+1)-times differentiable and ___ ≠ ___, then (∃ ___ between ___ and ___) such that
+___(x) − T_{n,___}(x) = ___^{(n+1)}(___)/(n+1)! · (x−___)^{n+1}.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.47 — Taylor’s Theorem with remainder</div><pre>Let c∈(a,b) and f be at least n+1 times differentiable. For every x∈(a,b) with x≠c, there exists ξ between c and x such that f(x)−T_{n,c}(x)= f^{(n+1)}(ξ)/(n+1)! · (x−c)^{n+1}.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Corollary 6.48 — Taylor error bound</div><pre>Corollary 6.48 — Taylor error bound.
+If |___^{(n+1)}(t)| ≤ ___ for all t between ___ and ___, then
+|___(x) − T_{n,___}(x)| ≤ ___/(n+1)! · |x−___|^{n+1}.</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Corollary 6.48 — Taylor error bound</div><pre>Under Taylor’s theorem assumptions, if |f^{(n+1)}(t)| ≤ M for all t between c and x, then |f(x)−T_{n,c}(x)| ≤ M/(n+1)! · |x−c|^{n+1}.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+</div></section>
+<section class='topic'><h2>6. Fourier series</h2><div class='grid'>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Definition 6.51 — Fourier series</div><pre>Definition 6.51 — Fourier series.
+For integrable, 2π-periodic ___, the Fourier series is
+___0 + Σ_{k=1}^∞ (___k cos(kx)+___k sin(kx)),
+with coefficients defined by integrals over [−π,π].</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Definition 6.51 — Fourier series</div><pre>Let f: ℝ→ℝ be integrable on [−π,π] and 2π-periodic. Its Fourier series is a_0 + Σ_{k=1}^∞(a_k cos(kx)+b_k sin(kx)), where a_0=(1/2π)∫_{−π}^{π}f(x)dx, a_k=(1/π)∫_{−π}^{π}f(x)cos(kx)dx, and b_k=(1/π)∫_{−π}^{π}f(x)sin(kx)dx.</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+<div class='card'><div class='inner'>
+<div class='face front'><div class='label'>Front</div><div class='title'>Theorem 6.53 — Fourier convergence theorem</div><pre>Theorem 6.53 — Fourier convergence.
+Let ___ be bounded, 2π-periodic, piecewise continuous and piecewise monotone.
+At continuity points, Fourier series → ___(___).
+At discontinuities, Fourier series → 1/2( left limit + right limit ).</pre><div class='source'>series-sol.pdf</div></div>
+<div class='face back'><div class='label'>Back</div><div class='title'>Theorem 6.53 — Fourier convergence theorem</div><pre>Let f: ℝ→ℝ be bounded and 2π-periodic. If f is piecewise continuous and piecewise monotone, then its Fourier series converges pointwise to f(x) at every continuity point x. At a discontinuity, it converges to ½(lim_{t→x−} f(t)+lim_{t→x+} f(t)).</pre><div class='source'>series-sol.pdf</div></div>
+</div></div>
+</div></section>
+<script>
+function flipAll(on) { document.querySelectorAll('.card').forEach(c => c.classList.toggle('flipped', on)); }
+document.addEventListener('click', function(e) { const card = e.target.closest('.card'); if (card) card.classList.toggle('flipped'); });
+</script></body></html>
