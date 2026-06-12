@@ -1,5 +1,278 @@
 export const cards = [
   {
+    "topic": "2. Set Theory",
+    "title": "Theorem 2.19 — Equality by Double Inclusion",
+    "front": "Theorem 2.19 — Equality by Double Inclusion.\r\nLet ___ and ___ be sets. Then ___ = ___ iff (___ ⊆ ___ and ___ ⊆ ___).",
+    "back": "Let A and B be sets. We have A = B if and only if A ⊆ B and B ⊆ A.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Set Theory",
+    "title": "Theorem 2.20 — Set Difference and Intersection",
+    "front": "Theorem 2.20 — Set Difference and Intersection.\r\nLet ___, ___, and ___ be sets. Then (___ ∖ ___) ∩ ___ = (___ ∩ ___) ∖ ___.",
+    "back": "Let A, B, and C be sets. Then (B ∖ A) ∩ C = (B ∩ C) ∖ A.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Set Theory",
+    "title": "Theorem 2.21 — Well-Ordering Property of ℕ",
+    "front": "Theorem 2.21 — Well-Ordering Property of ℕ.\r\nEvery non-empty subset ___ ⊆ ℕ has a minimum: (∃ ___ ∈ ___) such that ___ ≤ ___ for all ___ ∈ ___.",
+    "back": "Every non-empty subset S ⊆ ℕ has a minimum: there exists m ∈ S such that m ≤ x for all x ∈ S.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Functions",
+    "title": "Theorem 2.35 — Bijective iff Invertible",
+    "front": "Theorem 2.35 — Bijective iff Invertible.\r\nLet ___: ___ → ___ be a function. Then ___ is bijective iff ___ is invertible.",
+    "back": "Let f: A → B be a function from a set A to a set B. Then f is bijective if and only if it is invertible.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Orders",
+    "title": "Theorem 2.40 — Antisymmetry of ≤",
+    "front": "Theorem 2.40 — Antisymmetry of ≤.\r\nLet ___ be an ordered set. If ___, ___ ∈ ___ satisfy ___ ≤ ___ and ___ ≤ ___, then ___ = ___.",
+    "back": "Let S be an ordered set. If x, y ∈ S are such that x ≤ y and y ≤ x, then x = y.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.41 — Multiplying Inequalities by a Positive Number",
+    "front": "Theorem 2.41 — Multiplying Inequalities by a Positive Number.\r\nLet ___, ___, ___ ∈ ℝ with ___ > 0. If ___ < ___, then ___ · ___ < ___ · ___.",
+    "back": "Let x, y, z ∈ ℝ with 0 < z. If x < y, then xz < yz.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.42 — Negating an Inequality",
+    "front": "Theorem 2.42 — Negating an Inequality.\r\nLet ___, ___ ∈ ℝ. If ___ < ___, then -___ < -___.",
+    "back": "Let x, y ∈ ℝ. If x < y, then -y < -x.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.43 — Midpoint Inequality",
+    "front": "Theorem 2.43 — Midpoint Inequality.\r\nLet ___, ___ ∈ ℝ. If ___ < ___, then ___ < (___ + ___)/2 < ___.",
+    "back": "Let x, y ∈ ℝ. If x < y, then x < (x + y)/2 < y.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Bounds",
+    "title": "Theorem 2.47 — Uniqueness of Supremum and Infimum",
+    "front": "Theorem 2.47 — Uniqueness of Supremum and Infimum.\r\nLet ___ be a subset of an ordered set ___. If a supremum/infimum for ___ in ___ exists, then it is unique.",
+    "back": "Let A be a subset of an ordered set S. If a supremum for A in S exists, it is unique. If an infimum for A in S exists, it is unique.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Bounds",
+    "title": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum",
+    "front": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum.\r\nLet ___ ⊆ ℝ be non-empty.\r\n(a) If ___ is bounded above and ___ is an upper bound, then ___ = sup ___ iff (∀ε > 0)(∃ ___ ∈ ___) ___ > ___ - ε.\r\n(b) If ___ is bounded below and ___ is a lower bound, then ___ = inf ___ iff (∀ε > 0)(∃ ___ ∈ ___) ___ < ___ + ε.",
+    "back": "Let A ⊆ ℝ be non-empty. (a) Suppose A is bounded above and γ ∈ ℝ is an upper bound for A. Then γ = sup A iff for every ε > 0 there exists x ∈ A such that x > γ - ε. (b) Suppose A is bounded below and γ ∈ ℝ is a lower bound for A. Then γ = inf A iff for every ε > 0 there exists x ∈ A such that x < γ + ε.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.51 — Archimedean Principle I",
+    "front": "Theorem 2.51 — Archimedean Principle I.\r\nThe subset ___ ⊆ ℝ is not bounded above in ℝ.",
+    "back": "The subset ℕ ⊆ ℝ is not bounded above in ℝ.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.52 — Archimedean Principle II",
+    "front": "Theorem 2.52 — Archimedean Principle II.\r\nFor every ___ ∈ ℝ with ___ > 0, there exists ___ ∈ ℕ such that ___ - 1 ≤ ___ < ___.",
+    "back": "For every x ∈ ℝ with x > 0 there exists n ∈ ℕ such that n - 1 ≤ x < n.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.53 — Archimedean Principle III",
+    "front": "Theorem 2.53 — Archimedean Principle III.\r\nIf ___, ___ ∈ ℝ with ___, ___ > 0, then (∃ ___ ∈ ℕ) ___ < ___ · ___.",
+    "back": "If y, z ∈ ℝ with y, z > 0, there exists n ∈ ℕ such that y < nz.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Real Numbers",
+    "title": "Theorem 2.54 — Equivalence of Archimedean Principles",
+    "front": "Theorem 2.54 — Equivalence of Archimedean Principles.\r\nThe three variants of the Archimedean Principle are pairwise equivalent: ___ ⇔ ___ ⇔ ___.",
+    "back": "The three variants of the Archimedean Principle are pairwise equivalent.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Distance",
+    "title": "Theorem 2.57 — Absolute Value Inequality",
+    "front": "Theorem 2.57 — Absolute Value Inequality.\r\nLet ___, ___ ∈ ℝ with ___ > 0. Then |___| ≤ ___ iff -___ ≤ ___ ≤ ___. Similarly for |___| < ___.",
+    "back": "Let x, a ∈ ℝ with a > 0. We have |x| ≤ a if and only if -a ≤ x ≤ a, and similarly for the strict inequality |x| < a.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Distance",
+    "title": "Theorem 2.58 — Real Number Bounded by Its Absolute Value",
+    "front": "Theorem 2.58 — Real Number Bounded by Its Absolute Value.\r\nFor every ___ ∈ ℝ, we have -___ ≤ |___| and ___ ≤ |___|.",
+    "back": "For every x ∈ ℝ we have -x ≤ |x| and x ≤ |x|.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Distance",
+    "title": "Theorem 2.59 — Triangle Inequality",
+    "front": "Theorem 2.59 — Triangle Inequality.\r\nFor every ___, ___ ∈ ℝ, |___ + ___| ≤ |___| + |___|.",
+    "back": "For every x, y ∈ ℝ we have |x + y| ≤ |x| + |y|.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Density",
+    "title": "Theorem 2.60 — Density of ℚ Between Two Reals",
+    "front": "Theorem 2.60 — Density of ℚ Between Two Reals.\r\nFor every ___, ___ ∈ ℝ, if ___ < ___, then (∃ ___ ∈ ℚ) ___ < ___ < ___.",
+    "back": "For every x, y ∈ ℝ, if x < y, there exists r ∈ ℚ such that x < r < y.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "2. Density",
+    "title": "Corollary 2.61 — ℚ is Dense in ℝ",
+    "front": "Corollary 2.61 — ℚ is Dense in ℝ.\r\nFor every ___ ∈ ℝ and every ___ > 0, there exists ___ ∈ ℚ such that |___ - ___| < ___.",
+    "back": "For every z ∈ ℝ and every ε > 0, there exists r ∈ ℚ such that |z - r| < ε.",
+    "source": "sets-sol.pdf"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Theorem 3.12 — Bounded Sequence iff Absolute Bound",
+    "front": "Theorem 3.12 — Bounded Sequence iff Absolute Bound.\r\nA sequence (___) is bounded iff (∃ ___ > 0) such that |___| ≤ ___ for all ___ ∈ ℕ.",
+    "back": "A sequence (x_n) is bounded if and only if there exists C > 0 such that |x_n| ≤ C for all n ∈ ℕ.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Theorem 3.13 — Convergent Sequences are Bounded",
+    "front": "Theorem 3.13 — Convergent Sequences are Bounded.\r\nLet (___) be a sequence. If (___) converges, then (___) is bounded.",
+    "back": "Let (x_n) be a sequence. If (x_n) converges, then (x_n) is bounded.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Corollary 3.14 — Unbounded Implies Divergent",
+    "front": "Corollary 3.14 — Unbounded Implies Divergent.\r\nLet (___) be a sequence. If (___) is unbounded, then (___) diverges.",
+    "back": "Let (x_n) be a sequence. If (x_n) is unbounded, then (x_n) diverges.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Theorem 3.15 — Algebra of Limits",
+    "front": "Theorem 3.15 — Algebra of Limits.\r\nLet (___) and (___) be convergent sequences with ___ → ___ and ___ → ___. Then:\r\n(a) ___ + ___ → ___ + ___;\r\n(b) ___ - ___ → ___ - ___;\r\n(c) ___ · ___ → ___ · ___;\r\n(d) ___ / ___ → ___ / ___, if ___ ≠ 0 and ___ ≠ 0 for all ___ ∈ ℕ.",
+    "back": "Let (x_n) and (y_n) be convergent sequences with x_n → α and y_n → β, where α,β ∈ ℝ. Then (a) x_n + y_n → α + β; (b) x_n - y_n → α - β; (c) x_ny_n → αβ; (d) x_n/y_n → α/β if β ≠ 0 and y_n ≠ 0 for all n ∈ ℕ.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Theorem 3.16 — Inequalities and Limits",
+    "front": "Theorem 3.16 — Inequalities and Limits.\r\nLet (___) and (___) be convergent sequences. If ___ ≤ ___ for all ___ ∈ ℕ, then lim ___ ≤ lim ___.",
+    "back": "Let (x_n) and (y_n) be convergent sequences. If x_n ≤ y_n for all n ∈ ℕ, then lim_{n→∞} x_n ≤ lim_{n→∞} y_n.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Sandwich Theorem for Sequences",
+    "front": "Sandwich Theorem for Sequences.\r\nLet (___), (___), and (___) be sequences. Suppose ___ → ___, ___ → ___, and ___ ≤ ___ ≤ ___ for all ___ ∈ ℕ. Then ___ → ___.",
+    "back": "Let (a_n), (b_n), and (c_n) be sequences. Suppose that a_n → L, c_n → L, and a_n ≤ b_n ≤ c_n for all n ∈ ℕ. Then b_n → L.",
+    "source": "user-provided"
+  },
+  {
+    "topic": "3. Sequences",
+    "title": "Corollary 3.17 — Bounds Pass to the Limit",
+    "front": "Corollary 3.17 — Bounds Pass to the Limit.\r\nIf ___ ∈ ℝ and ___ ≤ ___ for all ___ ∈ ℕ, then ___ ≤ lim ___.\r\nIf ___ ∈ ℝ and ___ ≤ ___ for all ___ ∈ ℕ, then lim ___ ≤ ___.",
+    "back": "If a ∈ ℝ is such that a ≤ x_n for all n ∈ ℕ, then a ≤ lim_{n→∞} x_n. If b ∈ ℝ is such that x_n ≤ b for all n ∈ ℕ, then lim_{n→∞} x_n ≤ b.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Subsequences",
+    "title": "Lemma 3.20 — Subsequence Indices Dominate",
+    "front": "Lemma 3.20 — Subsequence Indices Dominate.\r\nLet (___) be a sequence and (___) a subsequence. Then ___ ≥ ___ for all ___ ∈ ℕ.",
+    "back": "Let (x_n) be a sequence and (x_{n_k}) a subsequence of (x_n). Then n_k ≥ k for all k ∈ ℕ.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Subsequences",
+    "title": "Theorem 3.21 — Sequence Limit iff All Subsequences Have Same Limit",
+    "front": "Theorem 3.21 — Sequence Limit iff All Subsequences Have Same Limit.\r\nLet ___ ∈ ℝ. A sequence (___) converges to ___ iff every subsequence of (___) converges to ___.",
+    "back": "Let L ∈ ℝ. A sequence (x_n) converges to L if and only if every subsequence of (x_n) converges to L.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Subsequences",
+    "title": "Theorem 3.22 — Divergence Criteria",
+    "front": "Theorem 3.22 — Divergence Criteria.\r\nLet (___) be a sequence. If any of these holds, then (___) diverges:\r\n(a) (___) is unbounded;\r\n(b) (___) has a subsequence that diverges;\r\n(c) (___) has two subsequences that converge to different limits.",
+    "back": "Let (x_n) be a sequence. If any of the following statements is true, then (x_n) diverges: (a) (x_n) is unbounded; (b) (x_n) has a subsequence that diverges; (c) (x_n) has two subsequences that converge to different limits.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Monotone Sequences",
+    "title": "Theorem 3.26 — Bounded Monotone Sequence Converges",
+    "front": "Theorem 3.26 — Bounded Monotone Sequence Converges.\r\nLet (___) be a bounded sequence. If (___) is monotone, then (___) converges.",
+    "back": "Let (x_n) be a bounded sequence. If (x_n) is monotone, then (x_n) converges.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Monotone Sequences",
+    "title": "Corollary 3.27 — Monotone Converges iff Bounded",
+    "front": "Corollary 3.27 — Monotone Converges iff Bounded.\r\nLet (___) be a monotone sequence. Then (___) converges iff (___) is bounded.",
+    "back": "Let (x_n) be a monotone sequence. Then (x_n) converges if and only if (x_n) is bounded.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Monotone Sequences",
+    "title": "Corollary 3.28 — Limit of Bounded Monotone Sequence",
+    "front": "Corollary 3.28 — Limit of Bounded Monotone Sequence.\r\nLet (___) be bounded and let ___ = {___ : ___ ∈ ℕ}.\r\n(a) If (___) is monotone increasing, then ___ → sup ___.\r\n(b) If (___) is monotone decreasing, then ___ → inf ___.",
+    "back": "Let (x_n) be a bounded sequence and let X = {x_n : n ∈ ℕ}. (a) If (x_n) is monotone increasing, then x_n → sup X. (b) If (x_n) is monotone decreasing, then x_n → inf X.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Subsequences",
+    "title": "Lemma 3.32 — Peaks Give Monotone Subsequences",
+    "front": "Lemma 3.32 — Peaks Give Monotone Subsequences.\r\nLet (___) be a bounded sequence.\r\n(a) If (___) has finitely many peaks, then it has a monotone increasing subsequence.\r\n(b) If (___) has infinitely many peaks, then it has a monotone decreasing subsequence.",
+    "back": "Let (x_n) be a bounded sequence. (a) If (x_n) has finitely many peaks, then (x_n) has a monotone increasing subsequence. (b) If (x_n) has infinitely many peaks, then (x_n) has a monotone decreasing subsequence.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Subsequences",
+    "title": "Theorem 3.33 — Bolzano–Weierstrass",
+    "front": "Theorem 3.33 — Bolzano–Weierstrass.\r\nLet (___) be a sequence. If (___) is bounded, then it has a convergent subsequence.",
+    "back": "Let (x_n) be a sequence. If (x_n) is bounded, then it has a convergent subsequence.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Cauchy Sequences",
+    "title": "Theorem 3.36 — Cauchy Sequences are Bounded",
+    "front": "Theorem 3.36 — Cauchy Sequences are Bounded.\r\nLet (___) be a sequence. If (___) is Cauchy, then (___) is bounded.",
+    "back": "Let (x_n) be a sequence. If (x_n) is Cauchy, then (x_n) is bounded.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Cauchy Sequences",
+    "title": "Theorem 3.37 — Cauchy Sequence with Convergent Subsequence",
+    "front": "Theorem 3.37 — Cauchy Sequence with Convergent Subsequence.\r\nLet (___) be a Cauchy sequence and (___) a subsequence that converges to ___ ∈ ℝ. Then ___ → ___.",
+    "back": "Let (x_n) be a Cauchy sequence and (x_{n_k}) a subsequence that converges to L ∈ ℝ. Then x_n → L.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Cauchy Sequences",
+    "title": "Theorem 3.38 — Cauchy Convergence Criterion",
+    "front": "Theorem 3.38 — Cauchy Convergence Criterion.\r\nLet (___) be a sequence. Then (___) converges iff it is Cauchy.",
+    "back": "Let (x_n) be a sequence. Then (x_n) converges if and only if it is Cauchy.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Contractive Sequences",
+    "title": "Lemma 3.41 — Contractive Sequence Difference Bound",
+    "front": "Lemma 3.41 — Contractive Sequence Difference Bound.\r\nLet (___) be a contractive sequence with constant ___. Then |___ - ___| ≤ ___^___ |___ - ___| for all ___ ∈ ℕ. In particular, if ___ = ___, then the sequence is constant.",
+    "back": "Let (x_n) be a contractive sequence with constant c. Then |x_{n+1} - x_n| ≤ c^n |x_1 - x_0| for all n ∈ ℕ. In particular, if x_1 = x_0 then the sequence is constant.",
+    "source": "sequences-sol.pdf"
+  },
+  {
+    "topic": "3. Contractive Sequences",
+    "title": "Theorem 3.42 — Contractive Sequences Converge",
+    "front": "Theorem 3.42 — Contractive Sequences Converge.\r\nLet (___) be a sequence. If (___) is contractive, then it converges.",
+    "back": "Let (x_n) be a sequence. If (x_n) is contractive, then it converges.",
+    "source": "sequences-sol.pdf"
+  },
+  {
     "topic": "4. Functional limits",
     "title": "Definition 4.3 — Limit point",
     "front": "Definition 4.3 — Limit point.\r\nLet ___ ⊆ ℝ and ___ ∈ ℝ.\r\n___ is a limit point of ___ iff:\r\n(∀ ___ > 0)(∃ ___ ∈ ___) 0 < |___ − ___| < ___.",
@@ -61,6 +334,34 @@ export const cards = [
     "front": "Definition 4.17 — Limit at infinity.\r\nlim_{x→∞} ___(x) = ___ iff:\r\n(∀ ___ > 0)(∃ ___ ∈ ℝ) [___ ∈ ___ and ___ > ___ ⇒ |___(___) − ___| < ___].",
     "back": "Let E ⊆ ℝ be not bounded above, f: E → ℝ, and L ∈ ℝ.\r\nlim_{x→∞} f(x)=L iff for every ε > 0 there exists M ∈ ℝ such that if x ∈ E and x > M, then |f(x)−L| < ε.",
     "source": "limits-sol.pdf"
+  },
+    {
+    "topic": "4. Functional limits",
+    "title": "Sandwich Theorem for Functions",
+    "front": "Sandwich Theorem for Functions.\r\nLet ___ ⊆ ℝ, let ___ be a limit point of ___, let ___, ___, ___: ___ → ℝ, and ___ ∈ ℝ.\r\nSuppose lim ___ = lim ___ = ___ and ___(___) ≤ ___(___) ≤ ___(___) for all ___ ∈ ___.\r\nThen lim ___ = ___.",
+    "back": "Let E ⊆ ℝ, let a be a limit point of E, let f,g,h: E → ℝ, and L ∈ ℝ. Suppose lim_{x→a} f(x) = lim_{x→a} h(x) = L and f(x) ≤ g(x) ≤ h(x) for all x ∈ E. Then lim_{x→a} g(x) = L.",
+    "source": "user-provided"
+  },
+  {
+    "topic": "4. Functional limits",
+    "title": "Definition — Right-Hand Limit",
+    "front": "Definition — Right-Hand Limit.\r\nLet ___ ⊆ ℝ, let ___: ___ → ℝ, and let ___, ___ ∈ ℝ. Suppose ___ is a limit point of ___ ∩ (___,∞).\r\nWe write lim_{x→___+} ___(___) = ___ if:\r\n(∀ε > 0)(∃δ > 0) if ___ ∈ ___ and ___ < ___ < ___ + δ, then |___(___) - ___| < ε.",
+    "back": "Let E ⊆ ℝ, let f: E → ℝ be a function, and let a,L ∈ ℝ. Suppose that a is a limit point of E ∩ (a,∞). We write lim_{x→a+} f(x) = L if for every ε > 0 there exists δ > 0 such that if x ∈ E and a < x < a + δ, then |f(x) - L| < ε.",
+    "source": "user-provided"
+  },
+  {
+    "topic": "4. Functional limits",
+    "title": "Definition — Left-Hand Limit",
+    "front": "Definition — Left-Hand Limit.\r\nLet ___ ⊆ ℝ, let ___: ___ → ℝ, and let ___, ___ ∈ ℝ. Suppose ___ is a limit point of ___ ∩ (-∞,___).\r\nWe write lim_{x→___-} ___(___) = ___ if:\r\n(∀ε > 0)(∃δ > 0) if ___ ∈ ___ and ___ - δ < ___ < ___, then |___(___) - ___| < ε.",
+    "back": "Let E ⊆ ℝ, let f: E → ℝ be a function, and let a,L ∈ ℝ. Suppose that a is a limit point of E ∩ (-∞,a). We write lim_{x→a-} f(x) = L if for every ε > 0 there exists δ > 0 such that if x ∈ E and a - δ < x < a, then |f(x) - L| < ε.",
+    "source": "user-provided"
+  },
+  {
+    "topic": "4. Functional limits",
+    "title": "One-Sided Limits Criterion for Two-Sided Limits",
+    "front": "One-Sided Limits Criterion for Two-Sided Limits.\r\nLet ___ ⊆ ℝ, ___: ___ → ℝ, and ___ ∈ ℝ. Suppose ___ ∈ ℝ is a limit point of both ___ ∩ (-∞,___) and ___ ∩ (___,∞).\r\nThen lim_{x→___} ___(___) = ___ iff lim_{x→___-} ___(___) = ___ = lim_{x→___+} ___(___).",
+    "back": "Let E ⊆ ℝ, f: E → ℝ, and L ∈ ℝ. Suppose that a ∈ ℝ is a limit point of both E ∩ (-∞,a) and E ∩ (a,∞). Then lim_{x→a} f(x) = L if and only if lim_{x→a-} f(x) = L = lim_{x→a+} f(x).",
+    "source": "user-provided"
   },
   {
     "topic": "4. Continuity",
