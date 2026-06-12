@@ -70,6 +70,13 @@ export const cards = [
     "source": "sets-sol.pdf"
   },
   {
+    "topic": "2. Bounds",
+    "title": "Non-empty Subset of ℝ Bounded Below has Infimum",
+    "front": "Non-empty Subset of ℝ Bounded Below has Infimum.\r\nLet ___ ⊆ ℝ be ____ and ___. Then ___ has an infimum.",
+    "back": "Non-empty Subset of ℝ Bounded Below has Infimum.\r\nLet A ⊆ ℝ be non-empty and bounded below. Then A has an infimum.",
+    "source": "sets-sol.pdf"
+  },
+  {
     "topic": "2. Real Numbers",
     "title": "Theorem 2.51 — Archimedean Principle I",
     "front": "Theorem 2.51 — Archimedean Principle I.\r\nThe subset ___ ⊆ ℝ is not bounded above in ℝ.",
