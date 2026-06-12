@@ -1,143 +1,381 @@
 export const cards = [
   {
-    "topic": "2. Set Theory",
-    "title": "Theorem 2.19 — Equality by Double Inclusion",
-    "front": "Theorem 2.19 — Equality by Double Inclusion.\r\nLet ___ and ___ be sets. Then ___ = ___ iff (___ ⊆ ___ and ___ ⊆ ___).",
-    "back": "Let A and B be sets. We have A = B if and only if A ⊆ B and B ⊆ A.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Theorem 1.36 — Even Integer Squared is Even",
+  "front": "Theorem 1.36 — Even Integer Squared is Even.\r\nLet ___ be an integer. If ___ is even, then ***² is even.",
+  "back": "Theorem 1.36 — Even Integer Squared is Even.\r\nLet x be an integer. If x is even, then x² is even.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Set Theory",
-    "title": "Theorem 2.20 — Set Difference and Intersection",
-    "front": "Theorem 2.20 — Set Difference and Intersection.\r\nLet ___, ___, and ___ be sets. Then (___ ∖ ___) ∩ ___ = (___ ∩ ___) ∖ ___.",
-    "back": "Let A, B, and C be sets. Then (B ∖ A) ∩ C = (B ∩ C) ∖ A.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Theorem 1.37 — Square of Sum of Even Integers is Even",
+  "front": "Theorem 1.37 — Square of Sum of Even Integers is Even.\r\nLet ___ and ___ be integers. If ___ and ___ are even, then (*** + ___)² is even.",
+  "back": "Theorem 1.37 — Square of Sum of Even Integers is Even.\r\nLet x and y be integers. If x and y are even, then (x + y)² is even.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Set Theory",
-    "title": "Theorem 2.21 — Well-Ordering Property of ℕ",
-    "front": "Theorem 2.21 — Well-Ordering Property of ℕ.\r\nEvery non-empty subset ___ ⊆ ℕ has a minimum: (∃ ___ ∈ ___) such that ___ ≤ ___ for all ___ ∈ ___.",
-    "back": "Every non-empty subset S ⊆ ℕ has a minimum: there exists m ∈ S such that m ≤ x for all x ∈ S.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Lemma 1.38 — Sum of Three Even Integers is Even",
+  "front": "Lemma 1.38 — Sum of Three Even Integers is Even.\r\nIf __*, ***, and ___ are even integers, then ___ + ___ + ___ is even.",
+  "back": "Lemma 1.38 — Sum of Three Even Integers is Even.\r\nIf a, b, and c are even integers, then a + b + c is even.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Functions",
-    "title": "Theorem 2.35 — Bijective iff Invertible",
-    "front": "Theorem 2.35 — Bijective iff Invertible.\r\nLet ___: ___ → ___ be a function. Then ___ is bijective iff ___ is invertible.",
-    "back": "Let f: A → B be a function from a set A to a set B. Then f is bijective if and only if it is invertible.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Lemma 1.39 — Sum of Two Even Integers is Even",
+  "front": "Lemma 1.39 — Sum of Two Even Integers is Even.\r\nIf ___ and ___ are even integers, then ___ + ___ is even.",
+  "back": "Lemma 1.39 — Sum of Two Even Integers is Even.\r\nIf a and b are even integers, then a + b is even.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Orders",
-    "title": "Theorem 2.40 — Antisymmetry of ≤",
-    "front": "Theorem 2.40 — Antisymmetry of ≤.\r\nLet ___ be an ordered set. If ___, ___ ∈ ___ satisfy ___ ≤ ___ and ___ ≤ ___, then ___ = ___.",
-    "back": "Let S be an ordered set. If x, y ∈ S are such that x ≤ y and y ≤ x, then x = y.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Theorem 1.40 — Contraposition Example",
+  "front": "Theorem 1.40 — Contraposition Example.\r\nLet ___ be an integer. If ***² - 6*** + 5 is even, then ___ is odd.",
+  "back": "Theorem 1.40 — Contraposition Example.\r\nLet x be an integer. If x² - 6x + 5 is even, then x is odd.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.41 — Multiplying Inequalities by a Positive Number",
-    "front": "Theorem 2.41 — Multiplying Inequalities by a Positive Number.\r\nLet ___, ___, ___ ∈ ℝ with ___ > 0. If ___ < ___, then ___ · ___ < ___ · ___.",
-    "back": "Let x, y, z ∈ ℝ with 0 < z. If x < y, then xz < yz.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Theorem 1.41 — Rational Plus Irrational is Irrational",
+  "front": "Theorem 1.41 — Rational Plus Irrational is Irrational.\r\nLet ___ and ___ be real numbers. If ___ is rational and ___ is irrational, then ___ + ___ is irrational.",
+  "back": "Theorem 1.41 — Rational Plus Irrational is Irrational.\r\nLet a and b be real numbers. If a is rational and b is irrational, then a + b is irrational.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.42 — Negating an Inequality",
-    "front": "Theorem 2.42 — Negating an Inequality.\r\nLet ___, ___ ∈ ℝ. If ___ < ___, then -___ < -___.",
-    "back": "Let x, y ∈ ℝ. If x < y, then -y < -x.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Theorem 1.42 — Remainders Modulo 8",
+  "front": "Theorem 1.42 — Remainders Modulo 8.\r\nIf an integer ___ divided by 8 gives a remainder of ___ or ***, then ***² divided by 8 gives a remainder of ***.",
+  "back": "Theorem 1.42 — Remainders Modulo 8.\r\nIf an integer a divided by 8 gives a remainder of 1 or 7, then a² divided by 8 gives a remainder of 1.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.43 — Midpoint Inequality",
-    "front": "Theorem 2.43 — Midpoint Inequality.\r\nLet ___, ___ ∈ ℝ. If ___ < ___, then ___ < (___ + ___)/2 < ___.",
-    "back": "Let x, y ∈ ℝ. If x < y, then x < (x + y)/2 < y.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Proofs",
+  "title": "Theorem 1.43 — Proof by Example",
+  "front": "Theorem 1.43 — Proof by Example.\r\nThere exists a linear function ***: ℝ → ℝ whose graph passes through the origin.",
+  "back": "Theorem 1.43 — Proof by Example.\r\nThere exists a linear function ℝ → ℝ whose graph passes through the origin.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Bounds",
-    "title": "Theorem 2.47 — Uniqueness of Supremum and Infimum",
-    "front": "Theorem 2.47 — Uniqueness of Supremum and Infimum.\r\nLet ___ be a subset of an ordered set ___. If a supremum/infimum for ___ in ___ exists, then it is unique.",
-    "back": "Let A be a subset of an ordered set S. If a supremum for A in S exists, it is unique. If an infimum for A in S exists, it is unique.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Induction",
+  "title": "Theorem 1.45 — Principle of Mathematical Induction",
+  "front": "Theorem 1.45 — Principle of Mathematical Induction.\r\nLet ***(***) be a condition over ___ ∈ ℕ. If:\r\n(a) ***(0) is True, and\r\n(b) for each ___ ∈ ℕ, ***(***) ⇒ ***(*** + 1),\r\nthen ***(***) is True for every ___ ∈ ℕ.",
+  "back": "Theorem 1.45 — Principle of Mathematical Induction.\r\nLet p(n) be a condition over n ∈ ℕ. If the following two statements are True, then p(n) is True for every n ∈ ℕ: (a) p(0) is True; (b) for each k ∈ ℕ, if p(k) is True, then p(k + 1) is True.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Bounds",
-    "title": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum",
-    "front": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum.\r\nLet ___ ⊆ ℝ be non-empty.\r\n(a) If ___ is bounded above and ___ is an upper bound, then ___ = sup ___ iff (∀ε > 0)(∃ ___ ∈ ___) ___ > ___ - ε.\r\n(b) If ___ is bounded below and ___ is a lower bound, then ___ = inf ___ iff (∀ε > 0)(∃ ___ ∈ ___) ___ < ___ + ε.",
-    "back": "Let A ⊆ ℝ be non-empty. (a) Suppose A is bounded above and γ ∈ ℝ is an upper bound for A. Then γ = sup A iff for every ε > 0 there exists x ∈ A such that x > γ - ε. (b) Suppose A is bounded below and γ ∈ ℝ is a lower bound for A. Then γ = inf A iff for every ε > 0 there exists x ∈ A such that x < γ + ε.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Induction",
+  "title": "Theorem 1.46 — Sum of Powers of 2",
+  "front": "Theorem 1.46 — Sum of Powers of 2.\r\nFor every ___ ∈ ℕ, we have\r\nΣ*{i=0}^{***} 2^i = 2^{*** + 1} - 1.",
+  "back": "Theorem 1.46 — Sum of Powers of 2.\r\nFor every n ∈ ℕ, we have Σ*{i=0}^{n} 2^i = 2^{n+1} - 1.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Bounds",
-    "title": "Non-empty Subset of ℝ Bounded Below has Infimum",
-    "front": "Non-empty Subset of ℝ Bounded Below has Infimum.\r\nLet ___ ⊆ ℝ be ____ and ___. Then ___ has an infimum.",
-    "back": "Non-empty Subset of ℝ Bounded Below has Infimum.\r\nLet A ⊆ ℝ be non-empty and bounded below. Then A has an infimum.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Induction",
+  "title": "Theorem 1.47 — Geometric Sum",
+  "front": "Theorem 1.47 — Geometric Sum.\r\nLet ___ ∈ ℝ with ___ ≠ 1. For every ___ ∈ ℕ, we have\r\nΣ*{i=0}^{***} ***^i = (***^{*** + 1} - 1)/(*** - 1).",
+  "back": "Theorem 1.47 — Geometric Sum.\r\nLet r ∈ ℝ with r ≠ 1. For every n ∈ ℕ, we have Σ*{i=0}^{n} r^i = (r^{n+1} - 1)/(r - 1).",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.51 — Archimedean Principle I",
-    "front": "Theorem 2.51 — Archimedean Principle I.\r\nThe subset ___ ⊆ ℝ is not bounded above in ℝ.",
-    "back": "The subset ℕ ⊆ ℝ is not bounded above in ℝ.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Induction",
+  "title": "Theorem 1.48 — Principle of Mathematical Induction from n₀",
+  "front": "Theorem 1.48 — Principle of Mathematical Induction from n₀.\r\nLet ***(***) be a condition over ___ ∈ ℤ. Let ___ ∈ ℤ be fixed. If:\r\n(a) ***(***) is True, and\r\n(b) for each ___ ≥ ___, ***(***) ⇒ ***(*** + 1),\r\nthen ***(***) is True for every ___ ≥ ___.",
+  "back": "Theorem 1.48 — Principle of Mathematical Induction from n₀.\r\nLet p(n) be a condition over n ∈ ℤ. Let n₀ ∈ ℤ be fixed. If the following two statements are True, then p(n) is True for every n ≥ n₀: (a) p(n₀) is True; (b) for each k ≥ n₀, if p(k) is True, then p(k + 1) is True.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.52 — Archimedean Principle II",
-    "front": "Theorem 2.52 — Archimedean Principle II.\r\nFor every ___ ∈ ℝ with ___ > 0, there exists ___ ∈ ℕ such that ___ - 1 ≤ ___ < ___.",
-    "back": "For every x ∈ ℝ with x > 0 there exists n ∈ ℕ such that n - 1 ≤ x < n.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Mathematical Induction",
+  "title": "Theorem 1.49 — Principle of Strong Mathematical Induction",
+  "front": "Theorem 1.49 — Principle of Strong Mathematical Induction.\r\nLet ***(***) be a condition over ___ ∈ ℤ. Let ___ ∈ ℤ be fixed. If:\r\n(a) ***(***) is True, and\r\n(b) for each ___ ≥ ___, if ***(***), ***(*** + 1), ..., ***(***) are all True, then ***(*** + 1) is True,\r\nthen ***(***) is True for every ___ ≥ __*.",
+  "back": "Theorem 1.49 — Principle of Strong Mathematical Induction.\r\nLet p(n) be a condition over n ∈ ℤ. Let n₀ ∈ ℤ be fixed. If the following two statements are True, then p(n) is True for every n ≥ n₀: (a) p(n₀) is True; (b) for each k ≥ n₀, if p(n₀), p(n₀ + 1), ..., p(k) are all True, then p(k + 1) is True.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.53 — Archimedean Principle III",
-    "front": "Theorem 2.53 — Archimedean Principle III.\r\nIf ___, ___ ∈ ℝ with ___, ___ > 0, then (∃ ___ ∈ ℕ) ___ < ___ · ___.",
-    "back": "If y, z ∈ ℝ with y, z > 0, there exists n ∈ ℕ such that y < nz.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Number Theory",
+  "title": "Theorem 1.50 — Every Integer ≥ 2 is a Product of Primes",
+  "front": "Theorem 1.50 — Every Integer ≥ 2 is a Product of Primes.\r\nEvery integer ___ ≥ 2 can be expressed as a product of prime numbers.\r\nMore precisely: given any integer ___ ≥ 2, there exists ___ ∈ ℤ*{>0} and prime numbers ___, ..., ___ such that ___ = ___ · ... · __*.",
+  "back": "Theorem 1.50 — Every Integer ≥ 2 is a Product of Primes.\r\nEvery integer n ≥ 2 can be expressed as a product of prime numbers. More precisely: given any integer n ≥ 2, there exists r ∈ ℤ*{>0} and prime numbers p₁, ..., pᵣ such that n = p₁ · ... · pᵣ.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Real Numbers",
-    "title": "Theorem 2.54 — Equivalence of Archimedean Principles",
-    "front": "Theorem 2.54 — Equivalence of Archimedean Principles.\r\nThe three variants of the Archimedean Principle are pairwise equivalent: ___ ⇔ ___ ⇔ ___.",
-    "back": "The three variants of the Archimedean Principle are pairwise equivalent.",
-    "source": "sets-sol.pdf"
+  "topic": "1. Number Theory",
+  "title": "Theorem 1.51 — Fundamental Theorem of Arithmetic",
+  "front": "Theorem 1.51 — Fundamental Theorem of Arithmetic.\r\nEvery integer ___ ≥ 2 can be expressed uniquely, up to permutation of the factors, as a product of prime numbers.",
+  "back": "Theorem 1.51 — Fundamental Theorem of Arithmetic.\r\nEvery integer n ≥ 2 can be expressed uniquely, up to permutation of the factors, as a product of prime numbers.",
+  "source": "proofs-sol.pdf"
   },
   {
-    "topic": "2. Distance",
-    "title": "Theorem 2.57 — Absolute Value Inequality",
-    "front": "Theorem 2.57 — Absolute Value Inequality.\r\nLet ___, ___ ∈ ℝ with ___ > 0. Then |___| ≤ ___ iff -___ ≤ ___ ≤ ___. Similarly for |___| < ___.",
-    "back": "Let x, a ∈ ℝ with a > 0. We have |x| ≤ a if and only if -a ≤ x ≤ a, and similarly for the strict inequality |x| < a.",
-    "source": "sets-sol.pdf"
+  "topic": "2. Sets",
+  "title": "Definition 2.1 — Set and Element",
+  "front": "Definition 2.1 — Set and Element.\r\nA set is a collection of unique objects, called ___. If ___ is a set and ___ is an element of ___, we write ___ ∈ ___. If ___ is not an element of ___, we write ___ ∉ ___.",
+  "back": "Definition 2.1 — Set and Element.\r\nA set is a collection of unique objects, called elements. If A is a set and x is an element of A, we write x ∈ A. If x is not an element of A, we write x ∉ A.",
+  "source": "sets-sol.pdf"
   },
   {
-    "topic": "2. Distance",
-    "title": "Theorem 2.58 — Real Number Bounded by Its Absolute Value",
-    "front": "Theorem 2.58 — Real Number Bounded by Its Absolute Value.\r\nFor every ___ ∈ ℝ, we have -___ ≤ |___| and ___ ≤ |___|.",
-    "back": "For every x ∈ ℝ we have -x ≤ |x| and x ≤ |x|.",
-    "source": "sets-sol.pdf"
+  "topic": "2. Sets",
+  "title": "Definition 2.7 — ZFC Axioms",
+  "front": "Definition 2.7 — ZFC Axioms.\r\nZFC includes the axioms of ___, ___, ___, ___, ___, ___, ___, ___, and ___.",
+  "back": "Definition 2.7 — ZFC Axioms.\r\nZFC includes the axioms of Extensionality, Pairing, Separation, Union, Power Set, Inductive Set, Replacement, Regularity, and Choice.",
+  "source": "sets-sol.pdf"
   },
   {
-    "topic": "2. Distance",
-    "title": "Theorem 2.59 — Triangle Inequality",
-    "front": "Theorem 2.59 — Triangle Inequality.\r\nFor every ___, ___ ∈ ℝ, |___ + ___| ≤ |___| + |___|.",
-    "back": "For every x, y ∈ ℝ we have |x + y| ≤ |x| + |y|.",
-    "source": "sets-sol.pdf"
+  "topic": "2. Sets",
+  "title": "Definition 2.8 — Equality of Sets",
+  "front": "Definition 2.8 — Equality of Sets.\r\nTwo sets ___ and ___ are equal, written ___ = ***, when\r\n(∀***) ___ ∈ ___ ⇔ ___ ∈ ___.",
+  "back": "Definition 2.8 — Equality of Sets.\r\nTwo sets A and B are equal, written A = B, when (∀x) x ∈ A ⇔ x ∈ B.",
+  "source": "sets-sol.pdf"
   },
   {
-    "topic": "2. Density",
-    "title": "Theorem 2.60 — Density of ℚ Between Two Reals",
-    "front": "Theorem 2.60 — Density of ℚ Between Two Reals.\r\nFor every ___, ___ ∈ ℝ, if ___ < ___, then (∃ ___ ∈ ℚ) ___ < ___ < ___.",
-    "back": "For every x, y ∈ ℝ, if x < y, there exists r ∈ ℚ such that x < r < y.",
-    "source": "sets-sol.pdf"
+  "topic": "2. Sets",
+  "title": "Definition 2.9 — Subset and Proper Subset",
+  "front": "Definition 2.9 — Subset and Proper Subset.\r\nA set ___ is a subset of ***, written ___ ⊆ ***, when\r\n(∀***) ___ ∈ ___ ⇒ ___ ∈ ***.\r\nIf ___ ⊆ ___ and ___ ≠ ***, then ___ is a proper subset of ***.",
+  "back": "Definition 2.9 — Subset and Proper Subset.\r\nA set A is a subset of a set B, written A ⊆ B, when (∀x) x ∈ A ⇒ x ∈ B. If A ⊆ B and A ≠ B, then A is a proper subset of B.",
+  "source": "sets-sol.pdf"
   },
   {
-    "topic": "2. Density",
-    "title": "Corollary 2.61 — ℚ is Dense in ℝ",
-    "front": "Corollary 2.61 — ℚ is Dense in ℝ.\r\nFor every ___ ∈ ℝ and every ___ > 0, there exists ___ ∈ ℚ such that |___ - ___| < ___.",
-    "back": "For every z ∈ ℝ and every ε > 0, there exists r ∈ ℚ such that |z - r| < ε.",
-    "source": "sets-sol.pdf"
+  "topic": "2. Sets",
+  "title": "Definition 2.12 — Union, Intersection, and Difference",
+  "front": "Definition 2.12 — Union, Intersection, and Difference.\r\nLet ___ and ___ be sets, considered as subsets of a fixed set ***.\r\n*** ∪ ___ = {*** ∈ ___ : ___ ∈ ___ or ___ ∈ ***}.\r\n*** ∩ ___ = {*** ∈ ___ : ___ ∈ ___ and ___ ∈ ***}.\r\n*** \ ___ = {*** ∈ ___ : ___ ∈ ___ and ___ ∉ ***}.",
+  "back": "Definition 2.12 — Union, Intersection, and Difference.\r\nLet A and B be sets, considered as subsets of a fixed set U. The union is A ∪ B = {x ∈ U : x ∈ A or x ∈ B}. The intersection is A ∩ B = {x ∈ U : x ∈ A and x ∈ B}. The difference is A \ B = {x ∈ U : x ∈ A and x ∉ B}.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Sets",
+  "title": "Definition 2.15 — Ordered Pair",
+  "front": "Definition 2.15 — Ordered Pair.\r\nLet ___ and ___ be sets. An ordered pair (***, ***) is a set of the form\r\n(***, ***) = {{***}, {***, ***}}, where ___ ∈ ___ and ___ ∈ ***.",
+  "back": "Definition 2.15 — Ordered Pair.\r\nLet A and B be sets. An ordered pair (a,b) is a set of the form (a,b) = {{a}, {a,b}}, where a ∈ A and b ∈ B.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Sets",
+  "title": "Definition 2.17 — Cartesian Product",
+  "front": "Definition 2.17 — Cartesian Product.\r\nLet ___ and ___ be sets. The Cartesian product of ___ and ___ is\r\n*** × ___ = {(***, ___) : ___ ∈ ___ and ___ ∈ ***}.",
+  "back": "Definition 2.17 — Cartesian Product.\r\nLet A and B be sets. The Cartesian product of A and B is A × B = {(a,b) : a ∈ A and b ∈ B}.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Sets",
+  "title": "Theorem 2.19 — Equality by Double Inclusion",
+  "front": "Theorem 2.19 — Equality by Double Inclusion.\r\nLet ___ and ___ be sets. Then ___ = ___ iff (*** ⊆ ___ and ___ ⊆ ___).",
+  "back": "Theorem 2.19 — Equality by Double Inclusion.\r\nLet A and B be sets. We have A = B if and only if A ⊆ B and B ⊆ A.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Sets",
+  "title": "Theorem 2.20 — Set Difference and Intersection",
+  "front": "Theorem 2.20 — Set Difference and Intersection.\r\nLet ___, ***, and ___ be sets. Then (*** \ ***) ∩ ___ = (*** ∩ ___) \ ___.",
+  "back": "Theorem 2.20 — Set Difference and Intersection.\r\nLet A, B, and C be sets. Then (B \ A) ∩ C = (B ∩ C) \ A.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Numbers",
+  "title": "Theorem 2.21 — Well-Ordering Property of ℕ",
+  "front": "Theorem 2.21 — Well-Ordering Property of ℕ.\r\nEvery non-empty subset ___ ⊆ ℕ has a minimum: there exists ___ ∈ ___ such that ___ ≤ ___ for all ___ ∈ ___.",
+  "back": "Theorem 2.21 — Well-Ordering Property of ℕ.\r\nEvery non-empty subset S ⊆ ℕ has a minimum: there exists m ∈ S such that m ≤ x for all x ∈ S.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Relations",
+  "title": "Definition 2.22 — Relation",
+  "front": "Definition 2.22 — Relation.\r\nLet ___ and ___ be sets. A relation from ___ to ___ is a subset ___ ⊆ ___ × ___. For ___ ∈ ___ and ___ ∈ ***, we write ___ R ___ if (***, ___) ∈ ___.",
+  "back": "Definition 2.22 — Relation.\r\nLet A and B be sets. A relation from A to B is a subset R ⊆ A × B. For a ∈ A and b ∈ B, we write aRb if (a,b) ∈ R.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Functions",
+  "title": "Definition 2.27 — Function, Domain, Codomain, Image, and Preimage",
+  "front": "Definition 2.27 — Function, Domain, Codomain, Image, and Preimage.\r\nLet ___ and ___ be sets, and let ___ ⊆ ___ × ___ be a relation. We say ___ is a function ***: ___ → ___ if for every ___ ∈ ___ there exists a unique ___ ∈ ___ such that (***, ___) ∈ ***.\r\n*** is the domain, ___ is the codomain, ***(***) is the image of ***, and ***^{-1}(***) is the preimage.",
+  "back": "Definition 2.27 — Function, Domain, Codomain, Image, and Preimage.\r\nLet A and B be sets, and let f ⊆ A × B be a relation. We say f is a function from A to B if for every x ∈ A there exists a unique y ∈ B such that (x,y) ∈ f. We write f: A → B. A is the domain and B is the codomain. If (x,y) ∈ f then y = f(x), y is called the image of x, and f^{-1}(y) = {x ∈ A : f(x) = y} is called the preimage of y.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Functions",
+  "title": "Definition 2.27 — Image and Preimage of Subsets",
+  "front": "Definition 2.27 — Image and Preimage of Subsets.\r\nIf ___ ⊆ ***, then ***(***) = {*** ∈ ___ : (∃*** ∈ ***) ***(***) = ***}.\r\nIf ___ ⊆ ***, then ***^{-1}(***) = {*** ∈ ___ : ***(***) ∈ ***}.",
+  "back": "Definition 2.27 — Image and Preimage of Subsets.\r\nIf S ⊆ A, then f(S) = {y ∈ B : (∃x ∈ S) f(x) = y}. In the special case S = A, f(A) is called the image or range of f. If T ⊆ B, then f^{-1}(T) = {x ∈ A : f(x) ∈ T}.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Functions",
+  "title": "Definition 2.29 — Injective, Surjective, Bijective",
+  "front": "Definition 2.29 — Injective, Surjective, Bijective.\r\nLet ***: ___ → ___ be a function.\r\n*** is injective if (∀***, ___ ∈ ***)(***(***) = ***(***) ⇒ ___ = ***).\r\n*** is surjective if (∀*** ∈ ***)(∃*** ∈ ___) ***(***) = ***.\r\n*** is bijective if it is both ___ and ___.",
+  "back": "Definition 2.29 — Injective, Surjective, Bijective.\r\nLet f: A → B be a function. We say f is injective if (∀x,y ∈ A)(f(x) = f(y) ⇒ x = y). We say f is surjective if (∀z ∈ B)(∃x ∈ A) f(x) = z. We say f is bijective if f is both injective and surjective.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Functions",
+  "title": "Definition 2.34 — Invertible Function",
+  "front": "Definition 2.34 — Invertible Function.\r\nLet ___ and ___ be sets. A function ***: ___ → ___ is invertible if there exists a function ***: ___ → ___ such that ___ ∘ ___ = id*** and ___ ∘ ___ = id***.",
+  "back": "Definition 2.34 — Invertible Function.\r\nLet A and B be sets. We say that a function f: A → B is invertible if there exists a function g: B → A such that g ∘ f = id_A and f ∘ g = id_B.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Functions",
+  "title": "Theorem 2.35 — Bijective iff Invertible",
+  "front": "Theorem 2.35 — Bijective iff Invertible.\r\nLet ___: ___ → ___ be a function from a set ___ to a set ___. Then ___ is bijective iff ___ is invertible.",
+  "back": "Theorem 2.35 — Bijective iff Invertible.\r\nLet f: A → B be a function from a set A to a set B. Then f is bijective if and only if it is invertible.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Orders",
+  "title": "Definition 2.36 — Ordered Set",
+  "front": "Definition 2.36 — Ordered Set.\r\nLet ___ be a set. A total order on ___ is a relation ___ satisfying:\r\n(O1) for all ___, ___ ∈ ___, exactly one is true: ___ < ___, ___ < ___, ___ = ___;\r\n(O2) for all ___, ___, ___ ∈ ___, if ___ < ___ and ___ < ___, then ___ < ___.",
+  "back": "Definition 2.36 — Ordered Set.\r\nLet S be a set. A total order on S is a relation < satisfying: (O1) for all x,y ∈ S, exactly one of x < y, y < x, x = y is true; (O2) for all x,y,z ∈ S, if x < y and y < z, then x < z. An ordered set S is a set with an order <.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Orders",
+  "title": "Theorem 2.40 — Antisymmetry of ≤",
+  "front": "Theorem 2.40 — Antisymmetry of ≤.\r\nLet ___ be an ordered set. If ___, ___ ∈ ___ are such that ___ ≤ ___ and ___ ≤ ___, then ___ = ___.",
+  "back": "Theorem 2.40 — Antisymmetry of ≤.\r\nLet S be an ordered set. If x,y ∈ S are such that x ≤ y and y ≤ x, then x = y.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Completeness Axiom",
+  "front": "Completeness Axiom.\r\nEvery non-empty subset ___ ⊆ ℝ that is bounded above in ℝ has a ___ in ℝ.",
+  "back": "Completeness Axiom.\r\nEvery non-empty subset A ⊆ ℝ that is bounded above in ℝ has a supremum in ℝ.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.41 — Multiplying Inequalities by a Positive Number",
+  "front": "Theorem 2.41 — Multiplying Inequalities by a Positive Number.\r\nLet ___, ___, ___ ∈ ℝ with 0 < ___. If ___ < ___, then ___ · ___ < ___ · ___.",
+  "back": "Theorem 2.41 — Multiplying Inequalities by a Positive Number.\r\nLet x,y,z ∈ ℝ with 0 < z. If x < y, then xz < yz.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.42 — Negating an Inequality",
+  "front": "Theorem 2.42 — Negating an Inequality.\r\nLet ***, ___ ∈ ℝ. If ___ < ***, then -*** < -***.",
+  "back": "Theorem 2.42 — Negating an Inequality.\r\nLet x,y ∈ ℝ. If x < y, then -y < -x.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.43 — Midpoint Inequality",
+  "front": "Theorem 2.43 — Midpoint Inequality.\r\nLet ___, ___ ∈ ℝ. If ___ < ***, then ___ < (*** + ___)/2 < ***.",
+  "back": "Theorem 2.43 — Midpoint Inequality.\r\nLet x,y ∈ ℝ. If x < y, then x < (x + y)/2 < y.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Bounds",
+  "title": "Definition 2.44 — Bounded Above, Bounded Below, and Bounded",
+  "front": "Definition 2.44 — Bounded Above, Bounded Below, and Bounded.\r\nLet ___ be an ordered set and ___ ⊆ ***.\r\n*** is bounded below in ___ if (∃*** ∈ ***)(∀*** ∈ ***) ___ ≤ ***.\r\n*** is bounded above in ___ if (∃*** ∈ ***)(∀*** ∈ ___) ___ ≤ ***.\r\n*** is bounded in ___ if it is both ___ and ___.",
+  "back": "Definition 2.44 — Bounded Above, Bounded Below, and Bounded.\r\nLet S be an ordered set and A ⊆ S. A is bounded below in S if there exists β ∈ S such that (∀x ∈ A) β ≤ x. Then β is called a lower bound. A is bounded above in S if there exists β ∈ S such that (∀x ∈ A) x ≤ β. Then β is called an upper bound. A is bounded in S if it is bounded both above and below in S.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Bounds",
+  "title": "Definition 2.46 — Infimum and Supremum",
+  "front": "Definition 2.46 — Infimum and Supremum.\r\nLet ___ be an ordered set and ___ ⊆ ___. Let ___ be the set of lower bounds for ___ in ***. We say ___ ∈ ___ is an infimum if (∀*** ∈ ___) ___ ≤ ___.\r\nLet ___ be the set of upper bounds for ***. We say ___ ∈ ___ is a supremum if (∀*** ∈ ___) ___ ≤ ___.",
+  "back": "Definition 2.46 — Infimum and Supremum.\r\nLet S be an ordered set and A ⊆ S. Let L_A be the set of all lower bounds for A in S. We say α ∈ L_A is an infimum, or greatest lower bound, for A in S if (∀β ∈ L_A) β ≤ α. Let U_A be the set of all upper bounds for A in S. We say α ∈ U_A is a supremum, or least upper bound, for A in S if (∀β ∈ U_A) α ≤ β.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Bounds",
+  "title": "Theorem 2.47 — Uniqueness of Supremum and Infimum",
+  "front": "Theorem 2.47 — Uniqueness of Supremum and Infimum.\r\nLet ___ be a subset of an ordered set ***. If a supremum for ___ in ___ exists, then it is ***. If an infimum for ___ in ___ exists, then it is ***.",
+  "back": "Theorem 2.47 — Uniqueness of Supremum and Infimum.\r\nLet A be a subset of an ordered set S. If a supremum for A in S exists, it is unique. If an infimum for A in S exists, it is unique.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Bounds",
+  "title": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum",
+  "front": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum.\r\nLet ___ ⊆ ℝ be non-empty.\r\n(a) Suppose ___ is bounded above and ___ ∈ ℝ is an upper bound for ***. Then ___ = sup ___ iff for every ___ > 0 there exists ___ ∈ ___ such that ___ > ___ - ***.\r\n(b) Suppose ___ is bounded below and ___ ∈ ℝ is a lower bound for ***. Then ___ = inf ___ iff for every ___ > 0 there exists ___ ∈ ___ such that ___ < ___ + ***.",
+  "back": "Theorem 2.50 — Epsilon Characterisation of Supremum and Infimum.\r\nLet A ⊆ ℝ be non-empty. (a) Suppose A is bounded above and γ ∈ ℝ is an upper bound for A in ℝ. Then γ = sup A if and only if for every ε > 0 there exists x ∈ A such that x > γ - ε. (b) Suppose A is bounded below and γ ∈ ℝ is a lower bound for A in ℝ. Then γ = inf A if and only if for every ε > 0 there exists x ∈ A such that x < γ + ε.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Bounds",
+  "title": "Non-empty Subset of ℝ Bounded Below (or Above) has Infimum (or Supremum)",
+  "front": "Non-empty Subset of ℝ Bounded Below (or Above) has Infimum (or Supremum).\r\nLet ___ ⊆ ℝ be ____ and ***. Then ___ has an infimum or supremum.",
+  "back": "Non-empty Subset of ℝ Bounded Below (or Above) has Infimum (or Supremum).\r\nLet A ⊆ ℝ be non-empty and bounded below or bounded above. If A is bounded below, then A has an infimum. If A is bounded above, then A has a supremum.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.51 — Archimedean Principle I",
+  "front": "Theorem 2.51 — Archimedean Principle I.\r\nThe subset ___ ⊆ ℝ is not bounded above in ℝ.",
+  "back": "Theorem 2.51 — Archimedean Principle I.\r\nThe subset ℕ ⊆ ℝ is not bounded above in ℝ.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.52 — Archimedean Principle II",
+  "front": "Theorem 2.52 — Archimedean Principle II.\r\nFor every ___ ∈ ℝ with ___ > 0, there exists ___ ∈ ℕ such that ___ - 1 ≤ ___ < ***.",
+  "back": "Theorem 2.52 — Archimedean Principle II.\r\nFor every x ∈ ℝ with x > 0, there exists n ∈ ℕ such that n - 1 ≤ x < n.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.53 — Archimedean Principle III",
+  "front": "Theorem 2.53 — Archimedean Principle III.\r\nIf ***, ___ ∈ ℝ with ***, ___ > 0, then there exists ___ ∈ ℕ such that ___ < ___ · ***.",
+  "back": "Theorem 2.53 — Archimedean Principle III.\r\nIf y,z ∈ ℝ with y,z > 0, there exists n ∈ ℕ such that y < nz.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Real Numbers",
+  "title": "Theorem 2.54 — Equivalence of Archimedean Principles",
+  "front": "Theorem 2.54 — Equivalence of Archimedean Principles.\r\nThe three variants of the Archimedean Principle are pairwise ***.",
+  "back": "Theorem 2.54 — Equivalence of Archimedean Principles.\r\nThe three variants of the Archimedean Principle are pairwise equivalent.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Distance",
+  "title": "Definition 2.55 — Intervals",
+  "front": "Definition 2.55 — Intervals.\r\nGiven ***, ___ ∈ ℝ with ___ ≤ ***, define:\r\n[***,***] = {*** ∈ ℝ : ___ ≤ ___ ≤ ***},\r\n(***,***) = {*** ∈ ℝ : ___ < ___ < ***},\r\n(***,***] = {*** ∈ ℝ : ___ < ___ ≤ ***},\r\n[***,***) = {*** ∈ ℝ : ___ ≤ ___ < ***}.",
+  "back": "Definition 2.55 — Intervals.\r\nGiven a,b ∈ ℝ with a ≤ b, the closed interval is [a,b] = {x ∈ ℝ : a ≤ x ≤ b}; the open interval is (a,b) = {x ∈ ℝ : a < x < b}; the half-open intervals are (a,b] = {x ∈ ℝ : a < x ≤ b} and [a,b) = {x ∈ ℝ : a ≤ x < b}.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Distance",
+  "title": "Definition 2.55 — Infinite Intervals",
+  "front": "Definition 2.55 — Infinite Intervals.\r\nGiven ___ ∈ ℝ, define:\r\n(***,∞) = {*** ∈ ℝ : ___ < ***},\r\n[***,∞) = {*** ∈ ℝ : ___ ≤ ***},\r\n(-∞,***) = {*** ∈ ℝ : ___ < ***},\r\n(-∞,***] = {*** ∈ ℝ : ___ ≤ ***}.",
+  "back": "Definition 2.55 — Infinite Intervals.\r\nGiven a,b ∈ ℝ, we define (a,∞) = {x ∈ ℝ : a < x}; [a,∞) = {x ∈ ℝ : a ≤ x}; (-∞,b) = {x ∈ ℝ : x < b}; and (-∞,b] = {x ∈ ℝ : x ≤ b}.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Distance",
+  "title": "Definition 2.56 — Distance on the Real Line",
+  "front": "Definition 2.56 — Distance on the Real Line.\r\nGiven ***, ___ ∈ ℝ, the distance between ___ and ___ on the real line is |*** - ***|.",
+  "back": "Definition 2.56 — Distance on the Real Line.\r\nGiven x,y ∈ ℝ, the distance between the points x and y on the real line is |x - y|.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Distance",
+  "title": "Theorem 2.57 — Absolute Value Inequality",
+  "front": "Theorem 2.57 — Absolute Value Inequality.\r\nLet ***, ___ ∈ ℝ with ___ > 0. We have |***| ≤ ___ iff -*** ≤ ___ ≤ ***. Similarly for |***| < ***.",
+  "back": "Theorem 2.57 — Absolute Value Inequality.\r\nLet x,a ∈ ℝ with a > 0. We have |x| ≤ a if and only if -a ≤ x ≤ a, and similarly for the strict inequality |x| < a.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Distance",
+  "title": "Theorem 2.58 — A Real Number is Bounded by Its Absolute Value",
+  "front": "Theorem 2.58 — A Real Number is Bounded by Its Absolute Value.\r\nFor every ___ ∈ ℝ, we have -*** ≤ |***| and ___ ≤ |***|.",
+  "back": "Theorem 2.58 — A Real Number is Bounded by Its Absolute Value.\r\nFor every x ∈ ℝ, we have -x ≤ |x| and x ≤ |x|.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Distance",
+  "title": "Theorem 2.59 — Triangle Inequality",
+  "front": "Theorem 2.59 — Triangle Inequality.\r\nFor every ***, ___ ∈ ℝ, we have |*** + ***| ≤ |***| + |***|.",
+  "back": "Theorem 2.59 — Triangle Inequality.\r\nFor every x,y ∈ ℝ, we have |x + y| ≤ |x| + |y|.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Density",
+  "title": "Theorem 2.60 — Density of ℚ Between Two Reals",
+  "front": "Theorem 2.60 — Density of ℚ Between Two Reals.\r\nFor every ___, ___ ∈ ℝ, if ___ < ___, then there exists ___ ∈ ℚ such that ___ < ___ < ***.",
+  "back": "Theorem 2.60 — Density of ℚ Between Two Reals.\r\nFor every x,y ∈ ℝ, if x < y, there exists r ∈ ℚ such that x < r < y.",
+  "source": "sets-sol.pdf"
+  },
+  {
+  "topic": "2. Density",
+  "title": "Corollary 2.61 — ℚ is Dense in ℝ",
+  "front": "Corollary 2.61 — ℚ is Dense in ℝ.\r\nFor every ___ ∈ ℝ and every ___ > 0, there exists ___ ∈ ℚ such that |*** - ___| < ___.",
+  "back": "Corollary 2.61 — ℚ is Dense in ℝ.\r\nFor every z ∈ ℝ and every ε > 0, there exists r ∈ ℚ such that |z - r| < ε.",
+  "source": "sets-sol.pdf"
   },
   {
     "topic": "3. Sequences",

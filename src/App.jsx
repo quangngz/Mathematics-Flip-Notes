@@ -2,6 +2,21 @@ import React, { useMemo, useState } from 'react';
 import { cards } from './cards';
 import './styles.css';
 
+function slugify(value) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function getChapter(topic) {
+  const match = topic.match(/^(\d+)\.\s*(.*)$/);
+  return {
+    id: match ? match[1] : topic,
+    title: match ? `Chapter ${match[1]}` : topic,
+  };
+}
+
 function readScript(text, start) {
   if (text[start] === '{') {
     const end = text.indexOf('}', start + 1);
@@ -139,36 +154,108 @@ export default function App() {
       }, new Map()),
     [],
   );
+  const chapters = useMemo(() => {
+    const groups = new Map();
+
+    cards.forEach((card) => {
+      const chapter = getChapter(card.topic);
+      const chapterKey = `chapter-${slugify(chapter.id)}`;
+
+      if (!groups.has(chapterKey)) {
+        groups.set(chapterKey, {
+          ...chapter,
+          key: chapterKey,
+          count: 0,
+          topics: new Map(),
+        });
+      }
+
+      const group = groups.get(chapterKey);
+      group.count += 1;
+
+      if (!group.topics.has(card.topic)) {
+        group.topics.set(card.topic, 0);
+      }
+
+      group.topics.set(card.topic, group.topics.get(card.topic) + 1);
+    });
+
+    return [...groups.values()].map((chapter) => ({
+      ...chapter,
+      topics: [...chapter.topics].map(([topic, count]) => ({ topic, count })),
+    }));
+  }, []);
 
   return (
-    <main>
-      <header className="page-header">
-        <h1>Real Analysis Theorem Flip Cards</h1>
-        <p className="sub">Total cards: {cards.length}. Click a card to flip it.</p>
-      </header>
+    <div className="app-shell">
+      <aside className="bookmark-panel" aria-label="Chapter bookmarks">
+        <div className="bookmark-title">Bookmarks</div>
+        <nav className="chapter-list">
+          {chapters.map((chapter) => (
+            <a className="chapter-bookmark" href={`#${chapter.key}`} key={chapter.key}>
+              <span className="bookmark-icon" aria-hidden="true" />
+              <span className="bookmark-copy">
+                <span className="bookmark-name">{chapter.title}</span>
+                <span className="bookmark-meta">{chapter.count} cards</span>
+              </span>
+            </a>
+          ))}
+        </nav>
+      </aside>
 
-      <div className="controls" aria-label="Card controls">
-        <button type="button" onClick={() => setForceFlipped(false)}>
-          Show all fronts
-        </button>
-        <button type="button" onClick={() => setForceFlipped(true)}>
-          Show all backs
-        </button>
-        <button type="button" onClick={() => setForceFlipped(null)}>
-          Study mode
-        </button>
-      </div>
+      <main>
+        <header className="page-header">
+          <div className="page-kicker">Study Deck</div>
+          <h1>Real Analysis Theorem Flip Cards</h1>
+          <p className="sub">Total cards: {cards.length}. Click a card to flip it.</p>
+        </header>
 
-      {[...topics].map(([topic, topicCards]) => (
-        <section className="topic" key={topic}>
-          <h2>{topic}</h2>
-          <div className="grid">
-            {topicCards.map((card) => (
-              <Card card={card} forceFlipped={forceFlipped} key={`${card.topic}-${card.title}`} />
-            ))}
-          </div>
-        </section>
-      ))}
-    </main>
+        <div className="controls" aria-label="Card controls">
+          <button type="button" onClick={() => setForceFlipped(false)}>
+            Show all fronts
+          </button>
+          <button type="button" onClick={() => setForceFlipped(true)}>
+            Show all backs
+          </button>
+          <button type="button" onClick={() => setForceFlipped(null)}>
+            Study mode
+          </button>
+        </div>
+
+        {chapters.map((chapter) => (
+          <section className="chapter" id={chapter.key} key={chapter.key}>
+            <header className="chapter-header">
+              <div>
+                <div className="chapter-label">Bookmark</div>
+                <h2>{chapter.title}</h2>
+              </div>
+              <span>{chapter.count} cards</span>
+            </header>
+
+            {chapter.topics.map(({ topic, count }) => {
+              const topicCards = topics.get(topic);
+
+              return (
+                <section className="topic" key={topic}>
+                  <div className="topic-heading">
+                    <h3>{topic}</h3>
+                    <span>{count}</span>
+                  </div>
+                  <div className="grid">
+                    {topicCards.map((card) => (
+                      <Card
+                        card={card}
+                        forceFlipped={forceFlipped}
+                        key={`${card.topic}-${card.title}`}
+                      />
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
+          </section>
+        ))}
+      </main>
+    </div>
   );
 }

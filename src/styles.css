@@ -1,9 +1,10 @@
 :root {
-  color: #111;
-  background: #f7f7f7;
+  color: #2f3437;
+  background: #fbfbfa;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,17 +15,108 @@ body {
   margin: 0;
 }
 
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
 main {
-  padding: 24px;
+  width: min(100%, 1220px);
+  padding: 38px 42px 56px;
+}
+
+.bookmark-panel {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+  padding: 18px 12px;
+  border-right: 1px solid #e6e4df;
+  background: #f7f6f3;
+}
+
+.bookmark-title {
+  margin: 4px 8px 12px;
+  color: #787774;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.chapter-list {
+  display: grid;
+  gap: 2px;
+}
+
+.chapter-bookmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 8px;
+  border-radius: 6px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.chapter-bookmark:hover,
+.chapter-bookmark:focus-visible {
+  background: #ecebe7;
+  outline: 0;
+}
+
+.bookmark-icon {
+  width: 18px;
+  height: 22px;
+  border: 1px solid #c9c5be;
+  border-radius: 3px 3px 2px 2px;
+  background:
+    linear-gradient(135deg, transparent 0 45%, #e3e0da 46% 55%, transparent 56%),
+    #fff;
+  box-shadow: inset 0 -5px 0 #f1efeb;
+  flex: 0 0 auto;
+}
+
+.bookmark-copy {
+  display: grid;
+  min-width: 0;
+  gap: 1px;
+}
+
+.bookmark-name,
+.bookmark-meta {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookmark-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.bookmark-meta {
+  color: #8d8a85;
+  font-size: 0.78rem;
 }
 
 .page-header h1 {
-  margin: 0 0 4px;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  max-width: 780px;
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: 0;
+}
+
+.page-kicker {
+  margin-bottom: 8px;
+  color: #787774;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .sub {
-  color: #555;
+  color: #696763;
   margin: 0;
 }
 
@@ -37,7 +129,7 @@ main {
   gap: 8px;
   margin-top: 16px;
   padding: 12px 0;
-  background: #f7f7f7;
+  background: #fbfbfa;
 }
 
 button {
@@ -48,19 +140,79 @@ button {
 .controls button {
   min-height: 40px;
   padding: 8px 12px;
-  border: 1px solid #bbb;
-  border-radius: 8px;
+  border: 1px solid #d8d4cd;
+  border-radius: 6px;
   background: #fff;
   cursor: pointer;
+}
+
+.controls button:hover,
+.controls button:focus-visible {
+  border-color: #bdb8af;
+  background: #f7f6f3;
+  outline: 0;
+}
+
+.chapter {
+  scroll-margin-top: 74px;
+  margin-top: 36px;
+}
+
+.chapter-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e4df;
+}
+
+.chapter-header h2 {
+  margin: 0;
+  font-size: 1.55rem;
+  letter-spacing: 0;
+}
+
+.chapter-header span {
+  color: #787774;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.chapter-label {
+  margin-bottom: 3px;
+  color: #8d8a85;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .topic {
   margin-top: 28px;
 }
 
-.topic h2 {
-  margin: 0 0 12px;
-  font-size: 1.35rem;
+.topic-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.topic-heading h3 {
+  margin: 0;
+  font-size: 1.18rem;
+  letter-spacing: 0;
+}
+
+.topic-heading span {
+  min-width: 28px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #eeede9;
+  color: #696763;
+  font-size: 0.78rem;
+  text-align: center;
 }
 
 .grid {
@@ -98,12 +250,13 @@ button {
   padding: 16px;
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 12%);
+  border: 1px solid #e6e4df;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
   backface-visibility: hidden;
 }
 
 .back {
-  background: #fffef8;
+  background: #fffdf7;
   transform: rotateY(180deg);
 }
 
@@ -175,6 +328,27 @@ button {
 }
 
 @media (max-width: 520px) {
+  .app-shell {
+    display: block;
+  }
+
+  .bookmark-panel {
+    position: sticky;
+    z-index: 20;
+    height: auto;
+    max-height: 190px;
+    padding: 12px;
+    border-right: 0;
+    border-bottom: 1px solid #e6e4df;
+  }
+
+  .chapter-list {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(150px, 1fr);
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
   main {
     padding: 16px;
   }
